@@ -3,7 +3,6 @@ from lxml import etree
 import os
 from PIL import Image
 import matplotlib.pyplot as plt
-# from http import cookiejar
 
 
 class Login:
@@ -82,6 +81,7 @@ class Login:
 
         if response.status_code == requests.codes.ok:
             if loginstate(response):
+                # 这里的Cookie只能获取到ASP.NET_SessionId，无法获取到AntiLeech，导致了Cookie登录失败，后期尝试selenium获取
                 self.cookie = 'ASP.NET_SessionId' +\
                               requests.utils.dict_from_cookiejar(self.s.cookies)['ASP.NET_SessionId']
                 print("Login By Manual")
