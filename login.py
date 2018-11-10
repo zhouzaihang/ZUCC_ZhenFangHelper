@@ -3,6 +3,7 @@ from lxml import etree
 import os
 from PIL import Image
 import matplotlib.pyplot as plt
+# from http import cookiejar
 
 
 class Login:
@@ -26,7 +27,7 @@ class Login:
         self.indexurl = 'http://xk.zucc.edu.cn/default2.aspx'
         self.imgUrl = 'http://xk.zucc.edu.cn/CheckCode.aspx?'
         self.s = requests.session()
-        self.cookie = 'ASP.NET_SessionId=*; AntiLeech='
+        self.cookie = 'ASP.NET_SessionId=MzS1OBoWx_LMLXqUl3uzb4vjqVbAeqCcby3nnh40Vyil1UKZDtE*; AntiLeech=2681179348'
 
     def loginCookie(self):
         self.headers['Cookie'] = self.cookie
@@ -81,6 +82,8 @@ class Login:
 
         if response.status_code == requests.codes.ok:
             if loginstate(response):
+                self.cookie = 'ASP.NET_SessionId' +\
+                              requests.utils.dict_from_cookiejar(self.s.cookies)['ASP.NET_SessionId']
                 print("Login By Manual")
                 # print(response.text)
                 return True
@@ -95,21 +98,22 @@ class Login:
 def loginstate(response):
     selector = etree.HTML(response.content)
     state = selector.xpath('/html/head/title/text()')[0]
+    # print(state)
     if state == "正方教务管理系统":
         print("登录成功")
         return True
     elif state == "欢迎使用正方教务管理系统！请登录":
         print("登录失败")
         return False
-    # print(state)
 
 
 if __name__ == "__main__":
     number = input("Your number:")
     password = input("Your password:")
     spider = Login(number, password)
+
     spider.loginManual()
-    # spider.loginCookie()
+    spider.loginCookie()
     # for i in range(1, 20):
     #     print(i)
     #     if spider.loginCookie():
