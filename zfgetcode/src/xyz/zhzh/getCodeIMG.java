@@ -19,7 +19,7 @@ public class getCodeIMG {
             FileOutputStream fileOutputStream = new FileOutputStream(new File(MySetting.IMG_DOWN + "Code" + i + ".gif"));
             responseSecret.getEntity().writeTo(fileOutputStream);
             fileOutputStream.close();
-            System.out.println("Code" + i + ".gif");
+            System.out.println("Code" + i + ".gif / 10000");
         }
         System.out.println("Finish!");
     }

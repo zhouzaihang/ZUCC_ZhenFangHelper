@@ -5,7 +5,7 @@ class MySetting {
 
     static String IMG_DOWN = "./data/downloads/";
 
-    // 字模
+    // 字模位置
     static String MODEL_ROOT = "./data/model";
     static String MODEL = "./data/model/";
 

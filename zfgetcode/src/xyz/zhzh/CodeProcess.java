@@ -5,17 +5,46 @@ import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.nio.file.Files;
-import java.util.ArrayList;
-import java.util.HashMap;
+import java.util.*;
 import java.util.List;
-import java.util.Map;
 
 public class CodeProcess {
     private static Map<BufferedImage, String> trainMap = null;
+    private static int index = 0;
 
     public static void main(String[] args) throws Exception {
-        startOCR();
-        System.out.println("图示识别完成");
+        Scanner in = new Scanner(System.in);
+        System.out.println("输入1开始自动识别，输入2表示开始生成模型，输入其他数字表示退出");
+        int choice = in.nextInt();
+        if (choice == 1){
+            startOCR();
+            System.out.println("识别完成");
+        }
+        else if (choice == 2) {
+            trainModel();
+            System.out.println("模型生成完毕");
+        }
+    }
+
+    /*
+     * 生成字模入口
+     */
+    private static void trainModel() throws Exception {
+        File dir = new File(MySetting.IMG_RESULT);
+        File[] files = dir.listFiles();
+        if (files != null) {
+            for (File file : files) {
+                BufferedImage img = removeBackgroud(MySetting.IMG_RESULT + file.getName());
+                List<BufferedImage> listImg = splitImage(img);
+                if (listImg.size() == 4) {
+                    for (int j = 0; j < listImg.size(); j++) {
+                        ImageIO.write(listImg.get(j), "PNG",
+                                new File(MySetting.MODEL + file.getName().charAt(j) + "-" + (index++) + ".gif"));
+                        System.out.println(file.getName() + "\t" + file.getName().charAt(j) + "-" + (index++) + ".gif");
+                    }
+                }
+            }
+        }
     }
 
     private static void startOCR() throws Exception {
@@ -37,7 +66,7 @@ public class CodeProcess {
     /*
      * 获得所有验证码图片路径
      */
-    static String getAllOcr(String file) throws Exception {
+    private static String getAllOcr(String file) throws Exception {
         BufferedImage img = removeBackgroud(file);
         List<BufferedImage> listImg = splitImage(img);
         Map<BufferedImage, String> map = loadModelData();
@@ -86,7 +115,7 @@ public class CodeProcess {
      * 切割验证码图片
      */
     private static List<BufferedImage> splitImage(BufferedImage img){
-        List<BufferedImage> subImgs = new ArrayList<BufferedImage>();
+        List<BufferedImage> subImgs = new ArrayList<>();
         subImgs.add(img.getSubimage(5, 0, 12, 23));
         subImgs.add(img.getSubimage(17, 0, 12, 23));
         subImgs.add(img.getSubimage(29, 0, 12, 23));
@@ -96,7 +125,7 @@ public class CodeProcess {
 
     private static Map<BufferedImage, String> loadModelData() throws Exception {
         if (trainMap == null) {
-            Map<BufferedImage, String> map = new HashMap<BufferedImage, String>();
+            Map<BufferedImage, String> map = new HashMap<>();
             File dir = new File(MySetting.MODEL_ROOT);
             File[] files = dir.listFiles();
             if (files == null) {
