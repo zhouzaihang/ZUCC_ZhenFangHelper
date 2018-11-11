@@ -11,4 +11,7 @@ class MySetting {
 
     // 识别结果
     static String IMG_RESULT = "./data/result/";
+
+    // 每次下载的数量
+    static int count = 100;
 }

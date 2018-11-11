@@ -46,11 +46,15 @@ public class CheckCode extends Application {
         root.setOnKeyPressed(event -> {
             if (event.getCode() == KeyCode.ENTER) {
                 String name = inputTF.getText();
+                File file = new File(MySetting.IMG_RESULT + nowFStr);
                 if (name == null || name.equals("")) {
                     rightCount++;
+                    final boolean delete = file.delete();
+                    if (!delete) {
+                        System.out.println("删除真确文件失败");
+                    }
                 } else {
                     inputTF.setText("");
-                    File file = new File(MySetting.IMG_RESULT + nowFStr);
                     File aimA = new File("./data/wrong/" + name + ".gif");
                     // 修正的文件
                     File aimB = new File("./data/wrongOrg/" + nowFStr);

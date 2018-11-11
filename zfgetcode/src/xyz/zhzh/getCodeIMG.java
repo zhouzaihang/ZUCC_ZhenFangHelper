@@ -10,16 +10,17 @@ import org.apache.http.impl.client.HttpClients;
 
 import java.io.IOException;
 
-public class getCodeIMG {
-    public static void main(String[] args) throws IOException {
-        for (int i = 0; i < 10000; i++) {
+class getCodeIMG {
+    static void main() throws IOException {
+        System.out.println("当前单词爬取数量为：" + MySetting.count);
+        for (int i = 0; i < MySetting.count; i++) {
             HttpGet secretCodeGet = new HttpGet(MySetting.SECRETE_URL);
             CloseableHttpClient client = HttpClients.createDefault();
             CloseableHttpResponse responseSecret = client.execute(secretCodeGet);
             FileOutputStream fileOutputStream = new FileOutputStream(new File(MySetting.IMG_DOWN + "Code" + i + ".gif"));
             responseSecret.getEntity().writeTo(fileOutputStream);
             fileOutputStream.close();
-            System.out.println("Code" + i + ".gif / 10000");
+            System.out.println("Code" + i + ".gif ");
         }
         System.out.println("Finish!");
     }

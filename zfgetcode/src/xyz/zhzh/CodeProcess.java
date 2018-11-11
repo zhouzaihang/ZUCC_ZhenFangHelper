@@ -8,13 +8,13 @@ import java.nio.file.Files;
 import java.util.*;
 import java.util.List;
 
-public class CodeProcess {
+class CodeProcess {
     private static Map<BufferedImage, String> trainMap = null;
     private static int index = 0;
 
-    public static void main(String[] args) throws Exception {
+    static void main() throws Exception {
         Scanner in = new Scanner(System.in);
-        System.out.println("输入1开始自动识别，输入2表示开始生成模型，输入其他数字表示退出");
+        System.out.println("输入1开始用当前模型处理数据集，输入2表示根据当前数据集生成模型，输入其他数字返回");
         int choice = in.nextInt();
         if (choice == 1){
             startOCR();
@@ -38,7 +38,7 @@ public class CodeProcess {
                 List<BufferedImage> listImg = splitImage(img);
                 if (listImg.size() == 4) {
                     for (int j = 0; j < listImg.size(); j++) {
-                        ImageIO.write(listImg.get(j), "PNG",
+                        ImageIO.write(listImg.get(j), "gif",
                                 new File(MySetting.MODEL + file.getName().charAt(j) + "-" + (index++) + ".gif"));
                         System.out.println(file.getName() + "\t" + file.getName().charAt(j) + "-" + (index++) + ".gif");
                     }
@@ -49,7 +49,7 @@ public class CodeProcess {
 
     private static void startOCR() throws Exception {
         int sameCount = 0;
-        for (int i = 0; i < 10000; i++) {
+        for (int i = 0; i < MySetting.count; i++) {
             String resultStr = getAllOcr(MySetting.IMG_DOWN + "Code" + i + ".gif");
             System.out.println(i + ".gif = " + resultStr);
             File source = new File(MySetting.IMG_DOWN + "Code" + i + ".gif");
@@ -58,15 +58,17 @@ public class CodeProcess {
                 sameCount++;
             } else {
                 Files.copy(source.toPath(), dest.toPath());
+                if (!source.delete())
+                    System.out.println("删除文件失败！");
             }
         }
         System.out.println("重复验证码有：" + sameCount);
     }
 
     /*
-     * 获得所有验证码图片路径
+     * 识别验证码
      */
-    private static String getAllOcr(String file) throws Exception {
+    static String getAllOcr(String file) throws Exception {
         BufferedImage img = removeBackgroud(file);
         List<BufferedImage> listImg = splitImage(img);
         Map<BufferedImage, String> map = loadModelData();
@@ -163,7 +165,11 @@ public class CodeProcess {
                     }
                 }
             }
-            if (count < min) {
+            if (count <= 3) {
+                result = map.get(bi);
+                break;
+            }
+            else if (count < min) {
                 min = count;
                 result = map.get(bi);
             }
@@ -174,7 +180,6 @@ public class CodeProcess {
     /*
      * 识别已被处理成黑色的字符
      */
-
     private static int isBlack(int colorInt) {
         Color color = new Color(colorInt);
         if (color.getRed() + color.getGreen() + color.getBlue() <= 100) {
