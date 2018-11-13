@@ -58,8 +58,8 @@ class CodeProcess {
                 sameCount++;
             } else {
                 Files.copy(source.toPath(), dest.toPath());
-                if (!source.delete())
-                    System.out.println("删除文件失败！");
+//                if (!source.delete())
+//                    System.out.println("删除文件失败！");
             }
         }
         System.out.println("重复验证码有：" + sameCount);
