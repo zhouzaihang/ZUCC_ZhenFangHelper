@@ -1,8 +1,24 @@
 import copy
 import time
-
-import login as lg
+import Login as Lg
 from lxml import etree
+import Lesson
+
+
+def get_lessons(selector):
+    lesson_list = []
+    lessons_tag_list = selector.xpath('//table[@id="kcmcGrid"]/tr[1]/following-sibling::tr')
+    for lessons_tag in lessons_tag_list:
+        code = lessons_tag.xpath('td[1]/input/@name')[0]
+        num = lessons_tag.xpath('td[2]/a/@onclick')[0][52:81]
+        na = lessons_tag.xpath('td[2]/a/text()')[0]
+        teacher_name = lessons_tag.xpath('td[4]/a/text()')[0]
+        time = lessons_tag.xpath('td[5]/@title')[0]
+        surplus = lessons_tag.xpath('td[11]/text()')[0]
+        lesson = Lesson.Lesson(num, na, code, teacher_name, time, surplus)
+        lesson_list.append(lesson)
+    # print(lesson_list[0].show())
+    return lesson_list
 
 
 def already(selector):
@@ -17,28 +33,11 @@ def already(selector):
 
 
 class LessonSpider:
-    class Lesson:
-        def __init__(self, num, nam, code, teacher_name, time, surplus):
-            self.number = num
-            self.name = nam
-            self.code = code
-            self.teacher_name = teacher_name
-            self.time = time
-            self.surplus = surplus
-
-        def show(self):
-            print('课程代码:' + self.number
-                  + '\t课程名:' + self.name
-                  # + '\t课程码:' + self.code[10:-3]
-                  + '\t教师:' + self.teacher_name
-                  + '\t时间:' + self.time
-                  + '\t余量:' + self.surplus)
-
     def __init__(self, number, password, name):
         self.number = number
         self.password = password
         self.name = name
-        self.login = lg.LoginSpider(number, password)
+        self.login = Lg.LoginSpider(number, password)
         self.url = 'http://xk.zucc.edu.cn/'
         self.base_data = {
             '__EVENTTARGET': '',
@@ -86,33 +85,20 @@ class LessonSpider:
         self.set_view_state(selector)
         del self.base_data['Button2']
         del self.base_data['TextBox1']
-        return self.get_lessons(selector)
-
-    def get_lessons(self, selector):
-        lesson_list = []
-        lessons_tag_list = selector.xpath('//table[@id="kcmcGrid"]/tr[1]/following-sibling::tr')
-        for lessons_tag in lessons_tag_list:
-            code = lessons_tag.xpath('td[1]/input/@name')[0]
-            num = lessons_tag.xpath('td[2]/a/@onclick')[0][52:81]
-            na = lessons_tag.xpath('td[2]/a/text()')[0]
-            teacher_name = lessons_tag.xpath('td[4]/a/text()')[0]
-            time = lessons_tag.xpath('td[5]/@title')[0]
-            surplus = lessons_tag.xpath('td[11]/text()')[0]
-            lesson = self.Lesson(num, na, code, teacher_name, time, surplus)
-            lesson_list.append(lesson)
-        # print(lesson_list[0].show())
-        return lesson_list
+        return get_lessons(selector)
 
     def select_lesson(self, lesson_list):
         data = copy.deepcopy(self.base_data)
         data['Button1'] = '  提交  '.encode('gb2312')
+        print("\n正在抢课：")
         for lesson in lesson_list:
             code = lesson.code
+            print(code)
             data[code] = 'on'
+            print(lesson.name)
         response = self.login.s.post(self.login.headers['Referer'], data=data, headers=self.login.headers)
         selector = etree.HTML(response.text)
         self.set_view_state(selector)
-        print(response.text)
         self.count_lesson = already(selector)
 
     def run(self):
@@ -120,15 +106,21 @@ class LessonSpider:
         print('请输入搜索课程名字')
         lesson_name = input()
         lesson_list = self.search_lessons(lesson_name)
-        for i in range(len(lesson_list)):
-            print(i, end='\t')
-            lesson_list[i].show()
-        print('请输入想选的课的id，id为每门课程开头的数字,如果没有课程显示，代表暂时没有公选课')
-        select_id = int(input())
-        lesson_list = lesson_list[select_id:select_id + 1]
+        select_list = []
+        while True:
+            for i in range(len(lesson_list)):
+                print(i, end='\t')
+                lesson_list[i].show()
+            print('请输入想选的课的id，id为每门课程开头的数字,如果没有课程显示，代表暂时没有公选课,输入负数表示完成')
+            select_id = int(input())
+            if select_id < 0:
+                break
+            select_list.append(lesson_list[select_id])
+        # for lesson in select_list:
+        #     print(lesson.show())
         while True:
             num = self.count_lesson
-            self.select_lesson(lesson_list)
+            self.select_lesson(select_list)
             if self.count_lesson > num:
                 break
             else:
