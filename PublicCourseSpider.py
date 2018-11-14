@@ -55,7 +55,7 @@ class LessonSpider:
         self.count_lesson = 0
 
     def hello_zf(self):
-        while not self.login.login_manual():
+        while not self.login.login_ocr():
             continue
 
         data = {
@@ -93,17 +93,17 @@ class LessonSpider:
         print("\n正在抢课：")
         for lesson in lesson_list:
             code = lesson.code
-            print(code)
             data[code] = 'on'
             print(lesson.name)
         response = self.login.s.post(self.login.headers['Referer'], data=data, headers=self.login.headers)
         selector = etree.HTML(response.text)
         self.set_view_state(selector)
         self.count_lesson = already(selector)
+        return len(lesson_list)
 
     def run(self):
         self.hello_zf()
-        print('请输入搜索课程名字')
+        print('请输入课程名字进行搜索(准确查找|直接回车显示所有公选课)')
         lesson_name = input()
         lesson_list = self.search_lessons(lesson_name)
         select_list = []
@@ -120,8 +120,8 @@ class LessonSpider:
         #     print(lesson.show())
         while True:
             num = self.count_lesson
-            self.select_lesson(select_list)
-            if self.count_lesson > num:
+            want = self.select_lesson(select_list)
+            if self.count_lesson >= num + want:
                 break
             else:
                 print("抢课失败")
@@ -129,9 +129,6 @@ class LessonSpider:
 
 
 if __name__ == "__main__":
-    number = input("学号:")
-    password = input("密码:")
-    name = input("姓名：")
+    number, password, name = Lg.get_information()
     spider = LessonSpider(number, password, name)
     spider.run()
-    spider.select_lesson(spider.search_lessons())

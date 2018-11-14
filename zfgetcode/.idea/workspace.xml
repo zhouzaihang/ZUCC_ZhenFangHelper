@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="29259376-c727-447b-96bf-d7fb4592274d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../OCR_Code.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Login.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Login.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PublicCourseSpider.py" beforeDir="false" afterPath="$PROJECT_DIR$/../PublicCourseSpider.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../code.gif" beforeDir="false" afterPath="$PROJECT_DIR$/../code.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../login.py" beforeDir="false" afterPath="$PROJECT_DIR$/../login.py" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -39,8 +41,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/xyz/zhzh/CodeProcess.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="103">
-              <caret line="47" column="5" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
+            <state relative-caret-position="616">
+              <caret line="170" column="13" lean-forward="true" selection-start-line="170" selection-start-column="13" selection-end-line="170" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -106,10 +108,9 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="640" />
+  <component name="ProjectFrameBounds" extendedState="4">
     <option name="y" value="25" />
-    <option name="width" value="1280" />
+    <option name="width" value="960" />
     <option name="height" value="1055" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -276,17 +277,18 @@
       <workItem from="1541938919281" duration="91000" />
       <workItem from="1542064260300" duration="1672000" />
       <workItem from="1542076601101" duration="7000" />
+      <workItem from="1542190241869" duration="2402000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29400000" />
+    <option name="totallyTimeSpent" value="31802000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="25" width="1920" height="1055" extended-state="6" />
+    <frame x="0" y="25" width="960" height="1055" extended-state="4" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16275346" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.3369803" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -375,8 +377,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/xyz/zhzh/CodeProcess.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="103">
-          <caret line="47" column="5" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
+        <state relative-caret-position="616">
+          <caret line="170" column="13" lean-forward="true" selection-start-line="170" selection-start-column="13" selection-end-line="170" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
