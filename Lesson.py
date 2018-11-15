@@ -14,6 +14,3 @@ class Lesson:
               + '\t教师:' + self.teacher_name
               + '\t时间:' + self.time
               + '\t余量:' + self.surplus)
-
-
-

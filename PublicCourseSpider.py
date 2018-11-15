@@ -1,4 +1,5 @@
 import copy
+import re
 import time
 import Login as Lg
 from lxml import etree
@@ -32,6 +33,15 @@ def already(selector):
     return count
 
 
+def show_error(selector):
+    error_tags = selector.xpath('/html/head/script/text()')
+    for error_tag in error_tags:
+        if error_tag:
+            r = "alert\('(.+?)'\);"
+            for s in re.findall(r, error_tag):
+                print('\n' + s)
+
+
 class LessonSpider:
     def __init__(self, number, password, name):
         self.number = number
@@ -44,7 +54,7 @@ class LessonSpider:
             '__EVENTARGUMENT': '',
             '__VIEWSTATE': '',
             'ddl_kcxz': '',
-            'ddl_ywyl': '%D3%D0',
+            'ddl_ywyl': '',
             'ddl_kcgs': '',
             'ddl_xqbs': '1',
             'ddl_sksj': '',
@@ -85,7 +95,7 @@ class LessonSpider:
         self.set_view_state(selector)
         del self.base_data['Button2']
         del self.base_data['TextBox1']
-        return get_lessons(selector)
+        return selector
 
     def select_lesson(self, lesson_list):
         data = copy.deepcopy(self.base_data)
@@ -97,6 +107,7 @@ class LessonSpider:
             print(lesson.name)
         response = self.login.s.post(self.login.headers['Referer'], data=data, headers=self.login.headers)
         selector = etree.HTML(response.text)
+        show_error(selector)
         self.set_view_state(selector)
         self.count_lesson = already(selector)
         return len(lesson_list)
@@ -105,7 +116,7 @@ class LessonSpider:
         self.hello_zf()
         print('请输入课程名字进行搜索(准确查找|直接回车显示所有公选课)')
         lesson_name = input()
-        lesson_list = self.search_lessons(lesson_name)
+        lesson_list = get_lessons(self.search_lessons(lesson_name))
         select_list = []
         while True:
             for i in range(len(lesson_list)):
@@ -118,14 +129,14 @@ class LessonSpider:
             select_list.append(lesson_list[select_id])
         # for lesson in select_list:
         #     print(lesson.show())
+        num = self.count_lesson
         while True:
-            num = self.count_lesson
             want = self.select_lesson(select_list)
             if self.count_lesson >= num + want:
                 break
             else:
                 print("\n抢课失败")
-                time.sleep(0.1)
+                time.sleep(0.01)
 
 
 if __name__ == "__main__":
