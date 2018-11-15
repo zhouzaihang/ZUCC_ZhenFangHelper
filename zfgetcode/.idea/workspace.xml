@@ -2,11 +2,83 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="29259376-c727-447b-96bf-d7fb4592274d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../OCR_Code.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Login.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Login.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../PublicCourseSpider.py" beforeDir="false" afterPath="$PROJECT_DIR$/../PublicCourseSpider.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../code.gif" beforeDir="false" afterPath="$PROJECT_DIR$/../code.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/downloads/Code0.gif" beforeDir="false" afterPath="$PROJECT_DIR$/data/downloads/Code0.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/downloads/Code1.gif" beforeDir="false" afterPath="$PROJECT_DIR$/data/downloads/Code1.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/downloads/Code10.gif" beforeDir="false" afterPath="$PROJECT_DIR$/data/downloads/Code10.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/downloads/Code12.gif" beforeDir="false" afterPath="$PROJECT_DIR$/data/downloads/Code12.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/downloads/Code13.gif" beforeDir="false" afterPath="$PROJECT_DIR$/data/downloads/Code13.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/downloads/Code15.gif" beforeDir="false" afterPath="$PROJECT_DIR$/data/downloads/Code15.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/downloads/Code16.gif" beforeDir="false" afterPath="$PROJECT_DIR$/data/downloads/Code16.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/downloads/Code18.gif" beforeDir="false" afterPath="$PROJECT_DIR$/data/downloads/Code18.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/downloads/Code19.gif" beforeDir="false" afterPath="$PROJECT_DIR$/data/downloads/Code19.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/downloads/Code2.gif" beforeDir="false" afterPath="$PROJECT_DIR$/data/downloads/Code2.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/downloads/Code21.gif" beforeDir="false" afterPath="$PROJECT_DIR$/data/downloads/Code21.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/downloads/Code22.gif" beforeDir="false" afterPath="$PROJECT_DIR$/data/downloads/Code22.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/downloads/Code24.gif" beforeDir="false" afterPath="$PROJECT_DIR$/data/downloads/Code24.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/downloads/Code25.gif" beforeDir="false" afterPath="$PROJECT_DIR$/data/downloads/Code25.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/downloads/Code27.gif" beforeDir="false" afterPath="$PROJECT_DIR$/data/downloads/Code27.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/downloads/Code28.gif" beforeDir="false" afterPath="$PROJECT_DIR$/data/downloads/Code28.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/downloads/Code29.gif" beforeDir="false" afterPath="$PROJECT_DIR$/data/downloads/Code29.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/downloads/Code3.gif" beforeDir="false" afterPath="$PROJECT_DIR$/data/downloads/Code3.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/downloads/Code31.gif" beforeDir="false" afterPath="$PROJECT_DIR$/data/downloads/Code31.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/downloads/Code33.gif" beforeDir="false" afterPath="$PROJECT_DIR$/data/downloads/Code33.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/downloads/Code34.gif" beforeDir="false" afterPath="$PROJECT_DIR$/data/downloads/Code34.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/downloads/Code36.gif" beforeDir="false" afterPath="$PROJECT_DIR$/data/downloads/Code36.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/downloads/Code37.gif" beforeDir="false" afterPath="$PROJECT_DIR$/data/downloads/Code37.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/downloads/Code38.gif" beforeDir="false" afterPath="$PROJECT_DIR$/data/downloads/Code38.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/downloads/Code4.gif" beforeDir="false" afterPath="$PROJECT_DIR$/data/downloads/Code4.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/downloads/Code40.gif" beforeDir="false" afterPath="$PROJECT_DIR$/data/downloads/Code40.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/downloads/Code41.gif" beforeDir="false" afterPath="$PROJECT_DIR$/data/downloads/Code41.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/downloads/Code43.gif" beforeDir="false" afterPath="$PROJECT_DIR$/data/downloads/Code43.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/downloads/Code44.gif" beforeDir="false" afterPath="$PROJECT_DIR$/data/downloads/Code44.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/downloads/Code46.gif" beforeDir="false" afterPath="$PROJECT_DIR$/data/downloads/Code46.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/downloads/Code47.gif" beforeDir="false" afterPath="$PROJECT_DIR$/data/downloads/Code47.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/downloads/Code49.gif" beforeDir="false" afterPath="$PROJECT_DIR$/data/downloads/Code49.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/downloads/Code50.gif" beforeDir="false" afterPath="$PROJECT_DIR$/data/downloads/Code50.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/downloads/Code52.gif" beforeDir="false" afterPath="$PROJECT_DIR$/data/downloads/Code52.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/downloads/Code53.gif" beforeDir="false" afterPath="$PROJECT_DIR$/data/downloads/Code53.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/downloads/Code55.gif" beforeDir="false" afterPath="$PROJECT_DIR$/data/downloads/Code55.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/downloads/Code56.gif" beforeDir="false" afterPath="$PROJECT_DIR$/data/downloads/Code56.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/downloads/Code58.gif" beforeDir="false" afterPath="$PROJECT_DIR$/data/downloads/Code58.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/downloads/Code59.gif" beforeDir="false" afterPath="$PROJECT_DIR$/data/downloads/Code59.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/downloads/Code6.gif" beforeDir="false" afterPath="$PROJECT_DIR$/data/downloads/Code6.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/downloads/Code61.gif" beforeDir="false" afterPath="$PROJECT_DIR$/data/downloads/Code61.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/downloads/Code62.gif" beforeDir="false" afterPath="$PROJECT_DIR$/data/downloads/Code62.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/downloads/Code64.gif" beforeDir="false" afterPath="$PROJECT_DIR$/data/downloads/Code64.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/downloads/Code65.gif" beforeDir="false" afterPath="$PROJECT_DIR$/data/downloads/Code65.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/downloads/Code66.gif" beforeDir="false" afterPath="$PROJECT_DIR$/data/downloads/Code66.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/downloads/Code68.gif" beforeDir="false" afterPath="$PROJECT_DIR$/data/downloads/Code68.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/downloads/Code69.gif" beforeDir="false" afterPath="$PROJECT_DIR$/data/downloads/Code69.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/downloads/Code7.gif" beforeDir="false" afterPath="$PROJECT_DIR$/data/downloads/Code7.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/downloads/Code70.gif" beforeDir="false" afterPath="$PROJECT_DIR$/data/downloads/Code70.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/downloads/Code72.gif" beforeDir="false" afterPath="$PROJECT_DIR$/data/downloads/Code72.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/downloads/Code73.gif" beforeDir="false" afterPath="$PROJECT_DIR$/data/downloads/Code73.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/downloads/Code74.gif" beforeDir="false" afterPath="$PROJECT_DIR$/data/downloads/Code74.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/downloads/Code76.gif" beforeDir="false" afterPath="$PROJECT_DIR$/data/downloads/Code76.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/downloads/Code77.gif" beforeDir="false" afterPath="$PROJECT_DIR$/data/downloads/Code77.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/downloads/Code79.gif" beforeDir="false" afterPath="$PROJECT_DIR$/data/downloads/Code79.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/downloads/Code80.gif" beforeDir="false" afterPath="$PROJECT_DIR$/data/downloads/Code80.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/downloads/Code81.gif" beforeDir="false" afterPath="$PROJECT_DIR$/data/downloads/Code81.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/downloads/Code83.gif" beforeDir="false" afterPath="$PROJECT_DIR$/data/downloads/Code83.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/downloads/Code84.gif" beforeDir="false" afterPath="$PROJECT_DIR$/data/downloads/Code84.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/downloads/Code86.gif" beforeDir="false" afterPath="$PROJECT_DIR$/data/downloads/Code86.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/downloads/Code87.gif" beforeDir="false" afterPath="$PROJECT_DIR$/data/downloads/Code87.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/downloads/Code89.gif" beforeDir="false" afterPath="$PROJECT_DIR$/data/downloads/Code89.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/downloads/Code9.gif" beforeDir="false" afterPath="$PROJECT_DIR$/data/downloads/Code9.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/downloads/Code90.gif" beforeDir="false" afterPath="$PROJECT_DIR$/data/downloads/Code90.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/downloads/Code92.gif" beforeDir="false" afterPath="$PROJECT_DIR$/data/downloads/Code92.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/downloads/Code93.gif" beforeDir="false" afterPath="$PROJECT_DIR$/data/downloads/Code93.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/downloads/Code95.gif" beforeDir="false" afterPath="$PROJECT_DIR$/data/downloads/Code95.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/downloads/Code96.gif" beforeDir="false" afterPath="$PROJECT_DIR$/data/downloads/Code96.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/downloads/Code98.gif" beforeDir="false" afterPath="$PROJECT_DIR$/data/downloads/Code98.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/downloads/Code99.gif" beforeDir="false" afterPath="$PROJECT_DIR$/data/downloads/Code99.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/zfgetcode/xyz/zhzh/getCodeIMG.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/zfgetcode/xyz/zhzh/getCodeIMG.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/xyz/zhzh/CheckCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/xyz/zhzh/CheckCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/xyz/zhzh/getCodeIMG.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/xyz/zhzh/getCodeIMG.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,8 +92,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/xyz/zhzh/MySetting.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
+            <state relative-caret-position="102">
+              <caret line="6" selection-start-line="6" selection-end-line="6" />
             </state>
           </provider>
         </entry>
@@ -29,8 +101,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/xyz/zhzh/getCodeIMG.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="23" column="9" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
+            <state relative-caret-position="170">
+              <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/xyz/zhzh/CodeProcess.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="953">
+              <caret line="64" column="50" lean-forward="true" selection-start-line="64" selection-start-column="50" selection-end-line="64" selection-end-column="50" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -39,22 +123,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/xyz/zhzh/CodeProcess.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="616">
-              <caret line="170" column="13" lean-forward="true" selection-start-line="170" selection-start-column="13" selection-end-line="170" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/xyz/zhzh/CheckCode.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="935">
-              <caret line="67" column="25" selection-start-line="67" selection-start-column="25" selection-end-line="67" selection-end-column="25" />
+            <state relative-caret-position="514">
+              <caret line="83" column="38" lean-forward="true" selection-start-line="83" selection-start-column="38" selection-end-line="83" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -101,10 +173,10 @@
         <option value="$PROJECT_DIR$/src/xyz/zhzh/PNGtogif.java" />
         <option value="$PROJECT_DIR$/src/xyz/zhzh/MySetting.java" />
         <option value="$PROJECT_DIR$/src/xyz/zhzh/CodeRecognition.java" />
-        <option value="$PROJECT_DIR$/src/xyz/zhzh/getCodeIMG.java" />
         <option value="$PROJECT_DIR$/src/xyz/zhzh/Main.java" />
-        <option value="$PROJECT_DIR$/src/xyz/zhzh/CheckCode.java" />
         <option value="$PROJECT_DIR$/src/xyz/zhzh/CodeProcess.java" />
+        <option value="$PROJECT_DIR$/src/xyz/zhzh/getCodeIMG.java" />
+        <option value="$PROJECT_DIR$/src/xyz/zhzh/CheckCode.java" />
       </list>
     </option>
   </component>
@@ -118,32 +190,7 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="zfgetcode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zfgetcode" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="zfgetcode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zfgetcode" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="zfgetcode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zfgetcode" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="zhzh" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="PackagesPane" />
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -277,12 +324,14 @@
       <workItem from="1541938919281" duration="91000" />
       <workItem from="1542064260300" duration="1672000" />
       <workItem from="1542076601101" duration="7000" />
-      <workItem from="1542190241869" duration="2402000" />
+      <workItem from="1542190241869" duration="3003000" />
+      <workItem from="1542237115023" duration="2952000" />
+      <workItem from="1542242845738" duration="1122000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31802000" />
+    <option name="totallyTimeSpent" value="36477000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="960" height="1055" extended-state="4" />
@@ -340,28 +389,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/xyz/zhzh/MySetting.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/xyz/zhzh/getCodeIMG.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="23" column="9" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/xyz/zhzh/CheckCode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="935">
-          <caret line="67" column="25" selection-start-line="67" selection-start-column="25" selection-end-line="67" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="102">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>
@@ -375,10 +404,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/xyz/zhzh/getCodeIMG.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/xyz/zhzh/CodeProcess.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="616">
-          <caret line="170" column="13" lean-forward="true" selection-start-line="170" selection-start-column="13" selection-end-line="170" selection-end-column="13" />
+        <state relative-caret-position="953">
+          <caret line="64" column="50" lean-forward="true" selection-start-line="64" selection-start-column="50" selection-end-line="64" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/xyz/zhzh/CheckCode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="514">
+          <caret line="83" column="38" lean-forward="true" selection-start-line="83" selection-start-column="38" selection-end-line="83" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

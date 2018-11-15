@@ -2,7 +2,209 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="325842ae-b266-47c9-a543-01fbfa15f29a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/information.json" beforeDir="false" afterPath="$PROJECT_DIR$/information.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfgetcode/data/downloads/Code11.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfgetcode/data/downloads/Code14.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfgetcode/data/downloads/Code17.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfgetcode/data/downloads/Code20.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfgetcode/data/downloads/Code23.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfgetcode/data/downloads/Code26.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfgetcode/data/downloads/Code30.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfgetcode/data/downloads/Code32.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfgetcode/data/downloads/Code35.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfgetcode/data/downloads/Code39.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfgetcode/data/downloads/Code42.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfgetcode/data/downloads/Code45.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfgetcode/data/downloads/Code48.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfgetcode/data/downloads/Code5.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfgetcode/data/downloads/Code51.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfgetcode/data/downloads/Code54.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfgetcode/data/downloads/Code57.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfgetcode/data/downloads/Code60.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfgetcode/data/downloads/Code63.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfgetcode/data/downloads/Code67.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfgetcode/data/downloads/Code71.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfgetcode/data/downloads/Code75.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfgetcode/data/downloads/Code78.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfgetcode/data/downloads/Code8.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfgetcode/data/downloads/Code82.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfgetcode/data/downloads/Code85.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfgetcode/data/downloads/Code88.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfgetcode/data/downloads/Code91.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfgetcode/data/downloads/Code94.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfgetcode/data/downloads/Code97.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfgetcode/data/result/00ys.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfgetcode/data/result/0340.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfgetcode/data/result/0bhl.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfgetcode/data/result/0gv7.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfgetcode/data/result/0j2e.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfgetcode/data/result/1dp0.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfgetcode/data/result/21rj.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfgetcode/data/result/2gpx.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfgetcode/data/result/41ka.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfgetcode/data/result/4ech.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfgetcode/data/result/4hhn.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfgetcode/data/result/4knu.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfgetcode/data/result/4nu2.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfgetcode/data/result/4xf3.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfgetcode/data/result/62e0.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfgetcode/data/result/6f57.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfgetcode/data/result/6ibe.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfgetcode/data/result/6lhl.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfgetcode/data/result/75dx.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfgetcode/data/result/7lac.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfgetcode/data/result/7pgi.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfgetcode/data/result/87lc.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfgetcode/data/result/8i45.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfgetcode/data/result/8nir.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfgetcode/data/result/8y1j.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfgetcode/data/result/a1ay.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfgetcode/data/result/ah6d.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfgetcode/data/result/b48v.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfgetcode/data/result/b7f2.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfgetcode/data/result/bk5b.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfgetcode/data/result/bnch.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfgetcode/data/result/brin.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfgetcode/data/result/c13p.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfgetcode/data/result/ch03.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfgetcode/data/result/d2vf.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfgetcode/data/result/d52i.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfgetcode/data/result/d88t.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfgetcode/data/result/ditu.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfgetcode/data/result/dsbe.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfgetcode/data/result/f2p5.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfgetcode/data/result/f5vd.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfgetcode/data/result/f81i.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfgetcode/data/result/fpyx.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfgetcode/data/result/ft44.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfgetcode/data/result/gd1g.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfgetcode/data/result/gtxv.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfgetcode/data/result/h6n3.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfgetcode/data/result/haua.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfgetcode/data/result/hmlh.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfgetcode/data/result/i4rb.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfgetcode/data/result/i7wi.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfgetcode/data/result/iknq.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfgetcode/data/result/ir03.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfgetcode/data/result/jcwf.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfgetcode/data/result/jstt.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfgetcode/data/result/jvy1.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfgetcode/data/result/k5k2.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfgetcode/data/result/klhg.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfgetcode/data/result/lajy.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfgetcode/data/result/lc3p.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfgetcode/data/result/ldp5.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfgetcode/data/result/lnuw.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfgetcode/data/result/ltmk.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfgetcode/data/result/lwsr.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfgetcode/data/result/n66i.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfgetcode/data/result/nqa4.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfgetcode/data/result/ntfb.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfgetcode/data/result/q708.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfgetcode/data/result/qb5f.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfgetcode/data/result/qecm.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfgetcode/data/result/rceu.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfgetcode/data/result/rfk1.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfgetcode/data/result/rp52.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfgetcode/data/result/rsb8.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfgetcode/data/result/t0gd.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfgetcode/data/result/ta1e.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfgetcode/data/result/td7k.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfgetcode/data/result/tgds.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfgetcode/data/result/u0a3.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfgetcode/data/result/ug6i.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfgetcode/data/result/vd1c.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfgetcode/data/result/vw3w.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfgetcode/data/result/wh08.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfgetcode/data/result/wk5f.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfgetcode/data/result/wxwm.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfgetcode/data/result/xbnv.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfgetcode/data/result/xet2.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfgetcode/data/result/xurg.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfgetcode/data/result/y2vk.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfgetcode/data/result/yems.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfgetcode/data/result/yity.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfgetcode/data/result/yly6.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfgetcode/data/result/yuj6.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zfgetcode/data/result/yvqe.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Login.py" beforeDir="false" afterPath="$PROJECT_DIR$/Login.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PublicCourseSpider.py" beforeDir="false" afterPath="$PROJECT_DIR$/PublicCourseSpider.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code.gif" beforeDir="false" afterPath="$PROJECT_DIR$/code.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfgetcode/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/zfgetcode/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfgetcode/data/downloads/Code0.gif" beforeDir="false" afterPath="$PROJECT_DIR$/zfgetcode/data/downloads/Code0.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfgetcode/data/downloads/Code1.gif" beforeDir="false" afterPath="$PROJECT_DIR$/zfgetcode/data/downloads/Code1.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfgetcode/data/downloads/Code10.gif" beforeDir="false" afterPath="$PROJECT_DIR$/zfgetcode/data/downloads/Code10.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfgetcode/data/downloads/Code12.gif" beforeDir="false" afterPath="$PROJECT_DIR$/zfgetcode/data/downloads/Code12.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfgetcode/data/downloads/Code13.gif" beforeDir="false" afterPath="$PROJECT_DIR$/zfgetcode/data/downloads/Code13.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfgetcode/data/downloads/Code15.gif" beforeDir="false" afterPath="$PROJECT_DIR$/zfgetcode/data/downloads/Code15.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfgetcode/data/downloads/Code16.gif" beforeDir="false" afterPath="$PROJECT_DIR$/zfgetcode/data/downloads/Code16.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfgetcode/data/downloads/Code18.gif" beforeDir="false" afterPath="$PROJECT_DIR$/zfgetcode/data/downloads/Code18.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfgetcode/data/downloads/Code19.gif" beforeDir="false" afterPath="$PROJECT_DIR$/zfgetcode/data/downloads/Code19.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfgetcode/data/downloads/Code2.gif" beforeDir="false" afterPath="$PROJECT_DIR$/zfgetcode/data/downloads/Code2.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfgetcode/data/downloads/Code21.gif" beforeDir="false" afterPath="$PROJECT_DIR$/zfgetcode/data/downloads/Code21.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfgetcode/data/downloads/Code22.gif" beforeDir="false" afterPath="$PROJECT_DIR$/zfgetcode/data/downloads/Code22.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfgetcode/data/downloads/Code24.gif" beforeDir="false" afterPath="$PROJECT_DIR$/zfgetcode/data/downloads/Code24.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfgetcode/data/downloads/Code25.gif" beforeDir="false" afterPath="$PROJECT_DIR$/zfgetcode/data/downloads/Code25.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfgetcode/data/downloads/Code27.gif" beforeDir="false" afterPath="$PROJECT_DIR$/zfgetcode/data/downloads/Code27.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfgetcode/data/downloads/Code28.gif" beforeDir="false" afterPath="$PROJECT_DIR$/zfgetcode/data/downloads/Code28.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfgetcode/data/downloads/Code29.gif" beforeDir="false" afterPath="$PROJECT_DIR$/zfgetcode/data/downloads/Code29.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfgetcode/data/downloads/Code3.gif" beforeDir="false" afterPath="$PROJECT_DIR$/zfgetcode/data/downloads/Code3.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfgetcode/data/downloads/Code31.gif" beforeDir="false" afterPath="$PROJECT_DIR$/zfgetcode/data/downloads/Code31.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfgetcode/data/downloads/Code33.gif" beforeDir="false" afterPath="$PROJECT_DIR$/zfgetcode/data/downloads/Code33.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfgetcode/data/downloads/Code34.gif" beforeDir="false" afterPath="$PROJECT_DIR$/zfgetcode/data/downloads/Code34.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfgetcode/data/downloads/Code36.gif" beforeDir="false" afterPath="$PROJECT_DIR$/zfgetcode/data/downloads/Code36.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfgetcode/data/downloads/Code37.gif" beforeDir="false" afterPath="$PROJECT_DIR$/zfgetcode/data/downloads/Code37.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfgetcode/data/downloads/Code38.gif" beforeDir="false" afterPath="$PROJECT_DIR$/zfgetcode/data/downloads/Code38.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfgetcode/data/downloads/Code4.gif" beforeDir="false" afterPath="$PROJECT_DIR$/zfgetcode/data/downloads/Code4.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfgetcode/data/downloads/Code40.gif" beforeDir="false" afterPath="$PROJECT_DIR$/zfgetcode/data/downloads/Code40.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfgetcode/data/downloads/Code41.gif" beforeDir="false" afterPath="$PROJECT_DIR$/zfgetcode/data/downloads/Code41.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfgetcode/data/downloads/Code43.gif" beforeDir="false" afterPath="$PROJECT_DIR$/zfgetcode/data/downloads/Code43.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfgetcode/data/downloads/Code44.gif" beforeDir="false" afterPath="$PROJECT_DIR$/zfgetcode/data/downloads/Code44.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfgetcode/data/downloads/Code46.gif" beforeDir="false" afterPath="$PROJECT_DIR$/zfgetcode/data/downloads/Code46.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfgetcode/data/downloads/Code47.gif" beforeDir="false" afterPath="$PROJECT_DIR$/zfgetcode/data/downloads/Code47.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfgetcode/data/downloads/Code49.gif" beforeDir="false" afterPath="$PROJECT_DIR$/zfgetcode/data/downloads/Code49.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfgetcode/data/downloads/Code50.gif" beforeDir="false" afterPath="$PROJECT_DIR$/zfgetcode/data/downloads/Code50.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfgetcode/data/downloads/Code52.gif" beforeDir="false" afterPath="$PROJECT_DIR$/zfgetcode/data/downloads/Code52.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfgetcode/data/downloads/Code53.gif" beforeDir="false" afterPath="$PROJECT_DIR$/zfgetcode/data/downloads/Code53.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfgetcode/data/downloads/Code55.gif" beforeDir="false" afterPath="$PROJECT_DIR$/zfgetcode/data/downloads/Code55.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfgetcode/data/downloads/Code56.gif" beforeDir="false" afterPath="$PROJECT_DIR$/zfgetcode/data/downloads/Code56.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfgetcode/data/downloads/Code58.gif" beforeDir="false" afterPath="$PROJECT_DIR$/zfgetcode/data/downloads/Code58.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfgetcode/data/downloads/Code59.gif" beforeDir="false" afterPath="$PROJECT_DIR$/zfgetcode/data/downloads/Code59.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfgetcode/data/downloads/Code6.gif" beforeDir="false" afterPath="$PROJECT_DIR$/zfgetcode/data/downloads/Code6.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfgetcode/data/downloads/Code61.gif" beforeDir="false" afterPath="$PROJECT_DIR$/zfgetcode/data/downloads/Code61.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfgetcode/data/downloads/Code62.gif" beforeDir="false" afterPath="$PROJECT_DIR$/zfgetcode/data/downloads/Code62.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfgetcode/data/downloads/Code64.gif" beforeDir="false" afterPath="$PROJECT_DIR$/zfgetcode/data/downloads/Code64.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfgetcode/data/downloads/Code65.gif" beforeDir="false" afterPath="$PROJECT_DIR$/zfgetcode/data/downloads/Code65.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfgetcode/data/downloads/Code66.gif" beforeDir="false" afterPath="$PROJECT_DIR$/zfgetcode/data/downloads/Code66.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfgetcode/data/downloads/Code68.gif" beforeDir="false" afterPath="$PROJECT_DIR$/zfgetcode/data/downloads/Code68.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfgetcode/data/downloads/Code69.gif" beforeDir="false" afterPath="$PROJECT_DIR$/zfgetcode/data/downloads/Code69.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfgetcode/data/downloads/Code7.gif" beforeDir="false" afterPath="$PROJECT_DIR$/zfgetcode/data/downloads/Code7.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfgetcode/data/downloads/Code70.gif" beforeDir="false" afterPath="$PROJECT_DIR$/zfgetcode/data/downloads/Code70.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfgetcode/data/downloads/Code72.gif" beforeDir="false" afterPath="$PROJECT_DIR$/zfgetcode/data/downloads/Code72.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfgetcode/data/downloads/Code73.gif" beforeDir="false" afterPath="$PROJECT_DIR$/zfgetcode/data/downloads/Code73.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfgetcode/data/downloads/Code74.gif" beforeDir="false" afterPath="$PROJECT_DIR$/zfgetcode/data/downloads/Code74.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfgetcode/data/downloads/Code76.gif" beforeDir="false" afterPath="$PROJECT_DIR$/zfgetcode/data/downloads/Code76.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfgetcode/data/downloads/Code77.gif" beforeDir="false" afterPath="$PROJECT_DIR$/zfgetcode/data/downloads/Code77.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfgetcode/data/downloads/Code79.gif" beforeDir="false" afterPath="$PROJECT_DIR$/zfgetcode/data/downloads/Code79.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfgetcode/data/downloads/Code80.gif" beforeDir="false" afterPath="$PROJECT_DIR$/zfgetcode/data/downloads/Code80.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfgetcode/data/downloads/Code81.gif" beforeDir="false" afterPath="$PROJECT_DIR$/zfgetcode/data/downloads/Code81.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfgetcode/data/downloads/Code83.gif" beforeDir="false" afterPath="$PROJECT_DIR$/zfgetcode/data/downloads/Code83.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfgetcode/data/downloads/Code84.gif" beforeDir="false" afterPath="$PROJECT_DIR$/zfgetcode/data/downloads/Code84.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfgetcode/data/downloads/Code86.gif" beforeDir="false" afterPath="$PROJECT_DIR$/zfgetcode/data/downloads/Code86.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfgetcode/data/downloads/Code87.gif" beforeDir="false" afterPath="$PROJECT_DIR$/zfgetcode/data/downloads/Code87.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfgetcode/data/downloads/Code89.gif" beforeDir="false" afterPath="$PROJECT_DIR$/zfgetcode/data/downloads/Code89.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfgetcode/data/downloads/Code9.gif" beforeDir="false" afterPath="$PROJECT_DIR$/zfgetcode/data/downloads/Code9.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfgetcode/data/downloads/Code90.gif" beforeDir="false" afterPath="$PROJECT_DIR$/zfgetcode/data/downloads/Code90.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfgetcode/data/downloads/Code92.gif" beforeDir="false" afterPath="$PROJECT_DIR$/zfgetcode/data/downloads/Code92.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfgetcode/data/downloads/Code93.gif" beforeDir="false" afterPath="$PROJECT_DIR$/zfgetcode/data/downloads/Code93.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfgetcode/data/downloads/Code95.gif" beforeDir="false" afterPath="$PROJECT_DIR$/zfgetcode/data/downloads/Code95.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfgetcode/data/downloads/Code96.gif" beforeDir="false" afterPath="$PROJECT_DIR$/zfgetcode/data/downloads/Code96.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfgetcode/data/downloads/Code98.gif" beforeDir="false" afterPath="$PROJECT_DIR$/zfgetcode/data/downloads/Code98.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfgetcode/data/downloads/Code99.gif" beforeDir="false" afterPath="$PROJECT_DIR$/zfgetcode/data/downloads/Code99.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfgetcode/out/production/zfgetcode/xyz/zhzh/getCodeIMG.class" beforeDir="false" afterPath="$PROJECT_DIR$/zfgetcode/out/production/zfgetcode/xyz/zhzh/getCodeIMG.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfgetcode/src/xyz/zhzh/CheckCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/zfgetcode/src/xyz/zhzh/CheckCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zfgetcode/src/xyz/zhzh/getCodeIMG.java" beforeDir="false" afterPath="$PROJECT_DIR$/zfgetcode/src/xyz/zhzh/getCodeIMG.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,30 +214,30 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/ZUCC_ZhenFangHelper$login.coverage" NAME="login Coverage Results" MODIFIED="1542111018768" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/ZUCC_ZhenFangHelper$PublicCourseSpider.coverage" NAME="PublicCourseSpider Coverage Results" MODIFIED="1542196713750" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/ZUCC_ZhenFangHelper$OCR_Code.coverage" NAME="OCR_Code Coverage Results" MODIFIED="1542194743855" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ZUCC_ZhenFangHelper$PublicCourseSpider.coverage" NAME="PublicCourseSpider Coverage Results" MODIFIED="1542197995343" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ZUCC_ZhenFangHelper$OCR_Code.coverage" NAME="OCR_Code Coverage Results" MODIFIED="1542246613245" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ZUCC_ZhenFangHelper$train.coverage" NAME="train Coverage Results" MODIFIED="1542073988561" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ZUCC_ZhenFangHelper$LessonSpider.coverage" NAME="LessonSpider Coverage Results" MODIFIED="1542157890334" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/ZUCC_ZhenFangHelper$Login.coverage" NAME="Login Coverage Results" MODIFIED="1542196624544" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ZUCC_ZhenFangHelper$Login.coverage" NAME="Login Coverage Results" MODIFIED="1542197775581" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="1622690670">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="7" />
+          <entry key="project.closed" value="9" />
           <entry key="project.open.time.0" value="2" />
           <entry key="project.open.time.4" value="1" />
-          <entry key="project.open.time.5" value="6" />
+          <entry key="project.open.time.5" value="7" />
           <entry key="project.open.time.6" value="3" />
           <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="13" />
+          <entry key="project.opened" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="gif" value="1" />
-          <entry key="json" value="2" />
-          <entry key="md" value="1" />
+          <entry key="json" value="3" />
+          <entry key="md" value="2" />
           <entry key="py" value="21" />
           <entry key="sh" value="1" />
         </counts>
@@ -44,73 +246,39 @@
         <counts>
           <entry key="Bash" value="1" />
           <entry key="Image" value="1" />
-          <entry key="JSON" value="2" />
-          <entry key="Markdown" value="1" />
+          <entry key="JSON" value="3" />
+          <entry key="Markdown" value="2" />
           <entry key="Python" value="21" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="19" />
-          <entry key="json" value="36" />
-          <entry key="py" value="6997" />
+          <entry key="json" value="58" />
+          <entry key="md" value="168" />
+          <entry key="py" value="7017" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JSON" value="36" />
+          <entry key="JSON" value="58" />
+          <entry key="Markdown" value="168" />
           <entry key="PLAIN_TEXT" value="19" />
-          <entry key="Python" value="6997" />
+          <entry key="Python" value="7017" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PublicCourseSpider.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="134" lean-forward="true" selection-start-line="134" selection-end-line="134" />
-              <folding>
-                <element signature="e#0#11#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/information.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="20" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Login.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="131" column="46" lean-forward="true" selection-start-line="131" selection-start-column="4" selection-end-line="131" selection-end-column="46" />
-              <folding>
-                <element signature="e#0#11#0" expanded="true" />
-                <marker date="1542196621586" expanded="true" signature="101:392" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/OCR_Code.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="377">
-              <caret line="100" column="17" lean-forward="true" selection-start-line="100" selection-start-column="17" selection-end-line="100" selection-end-column="17" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-                <marker date="1542196037505" expanded="true" signature="117:241" ph="..." />
-                <marker date="1542196037505" expanded="true" signature="818:2657" ph="..." />
-              </folding>
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="221">
+                <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -158,10 +326,11 @@
         <option value="$PROJECT_DIR$/LessonSpider.py" />
         <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/Lesson.py" />
-        <option value="$PROJECT_DIR$/OCR_Code.py" />
-        <option value="$PROJECT_DIR$/Login.py" />
         <option value="$PROJECT_DIR$/PublicCourseSpider.py" />
         <option value="$PROJECT_DIR$/information.json" />
+        <option value="$PROJECT_DIR$/Login.py" />
+        <option value="$PROJECT_DIR$/OCR_Code.py" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -171,7 +340,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="4">
     <option name="x" value="960" />
     <option name="y" value="25" />
     <option name="width" value="960" />
@@ -182,6 +351,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -193,7 +363,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -215,7 +384,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.PublicCourseSpider">
+  <component name="RunManager" selected="Python.OCR_Code">
     <configuration name="Login" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="ZUCC_ZhenFangHelper" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -289,9 +458,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.OCR_Code" />
         <item itemvalue="Python.PublicCourseSpider" />
         <item itemvalue="Python.Login" />
-        <item itemvalue="Python.OCR_Code" />
       </list>
     </recent_temporary>
   </component>
@@ -309,15 +478,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="25" width="1920" height="1055" extended-state="6" />
+    <frame x="960" y="25" width="960" height="1055" extended-state="4" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21611527" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.2177243" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3297062" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3297062" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3297062" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -331,7 +500,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" x="2357" y="93" width="406" height="919" id="SciView" order="3" sideWeight="0.49188313" weight="0.3479189" />
+      <window_info anchor="right" x="2357" y="93" width="406" height="919" id="SciView" order="3" sideWeight="0.49188313" weight="0.34682712" />
       <window_info anchor="right" id="Database" order="4" />
       <window_info anchor="right" x="0" y="0" width="590" height="855" id="Documentation" order="5" sideWeight="0.5081169" side_tool="true" weight="0.67129135" />
     </layout>
@@ -355,14 +524,6 @@
     <entry file="file://$PROJECT_DIR$/rename.sh">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -383,33 +544,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Login.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="131" column="46" lean-forward="true" selection-start-line="131" selection-start-column="4" selection-end-line="131" selection-end-column="46" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-            <marker date="1542196621586" expanded="true" signature="101:392" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/OCR_Code.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="100" column="17" lean-forward="true" selection-start-line="100" selection-start-column="17" selection-end-line="100" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-            <marker date="1542196037505" expanded="true" signature="117:241" ph="..." />
-            <marker date="1542196037505" expanded="true" signature="818:2657" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/PublicCourseSpider.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="134" lean-forward="true" selection-start-line="134" selection-end-line="134" />
+        <state relative-caret-position="138">
+          <caret line="115" column="29" selection-start-line="115" selection-start-column="29" selection-end-line="115" selection-end-column="29" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
@@ -418,8 +556,39 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/information.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="20" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
+        <state relative-caret-position="68">
+          <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Login.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2006">
+          <caret line="118" lean-forward="true" selection-start-line="118" selection-end-line="118" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+            <marker date="1542245473391" expanded="true" signature="101:392" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OCR_Code.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="96" column="22" lean-forward="true" selection-start-line="96" selection-start-column="22" selection-end-line="96" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="221">
+            <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>

@@ -51,7 +51,7 @@ public class CheckCode extends Application {
                     rightCount++;
                     final boolean delete = file.delete();
                     if (!delete) {
-                        System.out.println("删除真确文件失败");
+                        System.out.println("删除正确文件失败");
                     }
                 } else {
                     inputTF.setText("");

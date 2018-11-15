@@ -23,7 +23,7 @@ def get_lessons(selector):
 
 def already(selector):
     selected_lessons_pre_tag = selector.xpath('//table[@id="DataGrid2"]/tr')
-    print('正方你好！已经选择的公选课为：')
+    print('\n正方你好！已经选择的公选课为：')
     count = 0
     for i in selected_lessons_pre_tag:
         course = i.xpath('td[1]/text()') + i.xpath('td[7]/text()') + i.xpath('td[8]/text()')
@@ -124,7 +124,7 @@ class LessonSpider:
             if self.count_lesson >= num + want:
                 break
             else:
-                print("抢课失败")
+                print("\n抢课失败")
                 time.sleep(0.1)
 
 

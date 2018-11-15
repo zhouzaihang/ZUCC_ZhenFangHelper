@@ -92,7 +92,7 @@ class LoginSpider:
         return img_dir
 
     def down_code(self):
-        # 获取验证码并下载(通过抓包，可以看到请求链接，并且没刷新一次二维码，后面就多一个？)
+        # 获取验证码并下载(通过抓包，可以看到请求链接，并且每刷新一次二维码，后面就多一个？)
         image_response = self.s.get(self.imgUrl, stream=True)
         image = image_response.content
         img_dir = os.getcwd() + "/"

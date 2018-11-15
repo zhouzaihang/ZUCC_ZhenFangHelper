@@ -12,7 +12,7 @@ import java.io.IOException;
 
 class getCodeIMG {
     static void main() throws IOException {
-        System.out.println("当前单词爬取数量为：" + MySetting.count);
+        System.out.println("当前单次爬取数量为：" + MySetting.count);
         for (int i = 0; i < MySetting.count; i++) {
             HttpGet secretCodeGet = new HttpGet(MySetting.SECRETE_URL);
             CloseableHttpClient client = HttpClients.createDefault();
