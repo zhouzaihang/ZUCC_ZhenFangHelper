@@ -1,7 +1,19 @@
+import re
+
+
+def show_error(selector):
+    error_tags = selector.xpath('/html/head/script/text()')
+    for error_tag in error_tags:
+        if error_tag:
+            r = "alert\('(.+?)'\);"
+            for s in re.findall(r, error_tag):
+                print('\n' + s)
+
+
 class Lesson:
-    def __init__(self, num, nam, code, teacher_name, time, surplus):
+    def __init__(self, num, name, code, teacher_name, time, surplus):
         self.number = num
-        self.name = nam
+        self.name = name
         self.code = code
         self.teacher_name = teacher_name
         self.time = time

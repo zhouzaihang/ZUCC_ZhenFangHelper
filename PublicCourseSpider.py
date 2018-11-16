@@ -1,6 +1,4 @@
 import copy
-import re
-import time
 import Login as Lg
 from lxml import etree
 import Lesson
@@ -18,7 +16,6 @@ def get_lessons(selector):
         surplus = lessons_tag.xpath('td[11]/text()')[0]
         lesson = Lesson.Lesson(num, na, code, teacher_name, time, surplus)
         lesson_list.append(lesson)
-    # print(lesson_list[0].show())
     return lesson_list
 
 
@@ -33,21 +30,12 @@ def already(selector):
     return count
 
 
-def show_error(selector):
-    error_tags = selector.xpath('/html/head/script/text()')
-    for error_tag in error_tags:
-        if error_tag:
-            r = "alert\('(.+?)'\);"
-            for s in re.findall(r, error_tag):
-                print('\n' + s)
-
-
-class LessonSpider:
-    def __init__(self, number, password, name):
-        self.number = number
-        self.password = password
-        self.name = name
-        self.login = Lg.LoginSpider(number, password)
+class PublicLessonSpider:
+    def __init__(self, stu_number, stu_password, stu_name):
+        self.number = stu_number
+        self.password = stu_password
+        self.name = stu_name
+        self.login = Lg.LoginSpider(stu_number, stu_password)
         self.url = 'http://xk.zucc.edu.cn/'
         self.base_data = {
             '__EVENTTARGET': '',
@@ -102,12 +90,11 @@ class LessonSpider:
         data['Button1'] = '  提交  '.encode('gb2312')
         print("\n正在抢课：")
         for lesson in lesson_list:
-            code = lesson.code
-            data[code] = 'on'
+            data[lesson.code] = 'on'
             print(lesson.name)
         response = self.login.s.post(self.login.headers['Referer'], data=data, headers=self.login.headers)
         selector = etree.HTML(response.text)
-        show_error(selector)
+        Lesson.show_error(selector)
         self.set_view_state(selector)
         self.count_lesson = already(selector)
         return len(lesson_list)
@@ -118,17 +105,22 @@ class LessonSpider:
         lesson_name = input()
         lesson_list = get_lessons(self.search_lessons(lesson_name))
         select_list = []
+
         while True:
             for i in range(len(lesson_list)):
                 print(i, end='\t')
                 lesson_list[i].show()
-            print('请输入想选的课的id，id为每门课程开头的数字,如果没有课程显示，代表暂时没有公选课,输入负数表示完成')
-            select_id = int(input())
-            if select_id < 0:
+            print('请输入想选的课的id，id为每门课程开头的数字,如果没有课程显示，代表暂时没有公选课,输入其他任意字符表示完成')
+            select_id = input()
+            if select_id.isdigit():
+                select_id = int(select_id)
+                if 0 <= select_id < len(lesson_list):
+                    select_list.append(lesson_list[select_id])
+                else:
+                    break
+            else:
                 break
-            select_list.append(lesson_list[select_id])
-        # for lesson in select_list:
-        #     print(lesson.show())
+
         num = self.count_lesson
         while True:
             want = self.select_lesson(select_list)
@@ -136,10 +128,10 @@ class LessonSpider:
                 break
             else:
                 print("\n抢课失败")
-                time.sleep(0.01)
+                # time.sleep(0.01)
 
 
 if __name__ == "__main__":
     number, password, name = Lg.get_information()
-    spider = LessonSpider(number, password, name)
+    spider = PublicLessonSpider(number, password, name)
     spider.run()
