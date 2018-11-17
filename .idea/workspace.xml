@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="325842ae-b266-47c9-a543-01fbfa15f29a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PlannedCourseSpider.py" beforeDir="false" afterPath="$PROJECT_DIR$/PlannedCourseSpider.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PublicCourseSpider.py" beforeDir="false" afterPath="$PROJECT_DIR$/PublicCourseSpider.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code.gif" beforeDir="false" afterPath="$PROJECT_DIR$/code.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/information.json" beforeDir="false" afterPath="$PROJECT_DIR$/information.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,7 +19,7 @@
     <SUITE FILE_PATH="coverage/ZUCC_ZhenFangHelper$OCR_Code.coverage" NAME="OCR_Code Coverage Results" MODIFIED="1542246613245" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ZUCC_ZhenFangHelper$PlannedCourseSpider.coverage" NAME="PlannedCourseSpider Coverage Results" MODIFIED="1542414745692" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ZUCC_ZhenFangHelper$train.coverage" NAME="train Coverage Results" MODIFIED="1542073988561" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/ZUCC_ZhenFangHelper$main.coverage" NAME="main Coverage Results" MODIFIED="1542417786532" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ZUCC_ZhenFangHelper$main.coverage" NAME="main Coverage Results" MODIFIED="1542422192068" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ZUCC_ZhenFangHelper$LessonSpider.coverage" NAME="LessonSpider Coverage Results" MODIFIED="1542157890334" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ZUCC_ZhenFangHelper$Login.coverage" NAME="Login Coverage Results" MODIFIED="1542197775581" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
@@ -28,19 +27,19 @@
     <session id="1622690670">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="12" />
+          <entry key="project.closed" value="13" />
           <entry key="project.open.time.0" value="2" />
           <entry key="project.open.time.4" value="2" />
-          <entry key="project.open.time.5" value="8" />
+          <entry key="project.open.time.5" value="9" />
           <entry key="project.open.time.6" value="4" />
           <entry key="project.open.time.7" value="3" />
-          <entry key="project.opened" value="19" />
+          <entry key="project.opened" value="20" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="gif" value="1" />
-          <entry key="json" value="4" />
+          <entry key="json" value="5" />
           <entry key="md" value="4" />
           <entry key="py" value="32" />
           <entry key="sh" value="1" />
@@ -50,7 +49,7 @@
         <counts>
           <entry key="Bash" value="1" />
           <entry key="Image" value="1" />
-          <entry key="JSON" value="4" />
+          <entry key="JSON" value="5" />
           <entry key="Markdown" value="4" />
           <entry key="Python" value="32" />
         </counts>
@@ -58,17 +57,17 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="19" />
-          <entry key="json" value="136" />
+          <entry key="json" value="170" />
           <entry key="md" value="168" />
-          <entry key="py" value="9910" />
+          <entry key="py" value="10195" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JSON" value="136" />
+          <entry key="JSON" value="170" />
           <entry key="Markdown" value="168" />
           <entry key="PLAIN_TEXT" value="19" />
-          <entry key="Python" value="9910" />
+          <entry key="Python" value="10195" />
         </counts>
       </usages-collector>
     </session>
@@ -89,18 +88,18 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/PlannedCourseSpider.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="361">
-                  <caret line="118" lean-forward="true" selection-start-line="118" selection-end-line="118" />
+                <state relative-caret-position="254">
+                  <caret line="98" column="31" lean-forward="true" selection-start-line="98" selection-start-column="31" selection-end-line="98" selection-end-column="31" />
                   <folding>
-                    <element signature="e#0#18#0" expanded="true" />
-                    <marker date="1542417842042" expanded="true" signature="1567:1869" ph="..." />
-                    <marker date="1542417842042" expanded="true" signature="1955:2196" ph="..." />
-                    <marker date="1542417842042" expanded="true" signature="2903:2904" ph="..." />
-                    <marker date="1542417842042" expanded="true" signature="3219:3609" ph="..." />
-                    <marker date="1542417842042" expanded="true" signature="3781:3786" ph="..." />
+                    <element signature="e#1#19#0" expanded="true" />
+                    <marker date="1542419984016" expanded="true" signature="1567:1869" ph="..." />
+                    <marker date="1542419984016" expanded="true" signature="1955:2196" ph="..." />
+                    <marker date="1542419984016" expanded="true" signature="2903:2904" ph="..." />
+                    <marker date="1542419984016" expanded="true" signature="3219:3609" ph="..." />
+                    <marker date="1542419984016" expanded="true" signature="3781:3786" ph="..." />
                   </folding>
                 </state>
               </provider>
@@ -109,8 +108,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Login.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="442">
-                  <caret line="60" column="21" lean-forward="true" selection-start-line="60" selection-start-column="21" selection-end-line="60" selection-end-column="21" />
+                <state relative-caret-position="952">
+                  <caret line="60" column="21" selection-start-line="60" selection-start-column="21" selection-end-line="60" selection-end-column="21" />
                   <folding>
                     <element signature="e#0#11#0" expanded="true" />
                     <marker date="1542371408770" expanded="true" signature="101:392" ph="..." />
@@ -119,24 +118,15 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/PublicCourseSpider.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1717">
-                  <caret line="131" lean-forward="true" selection-start-line="131" selection-end-line="131" />
+                <state relative-caret-position="713">
+                  <caret line="122" lean-forward="true" selection-start-line="122" selection-end-line="122" />
                   <folding>
                     <element signature="e#0#11#0" expanded="true" />
-                    <marker date="1542415460265" expanded="true" signature="1062:1065" ph="..." />
+                    <marker date="1542421857694" expanded="true" signature="1062:1065" ph="..." />
                   </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/information.json">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="68">
-                  <caret line="4" column="1" lean-forward="true" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
                 </state>
               </provider>
             </entry>
@@ -154,15 +144,24 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/main.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="344">
-                  <caret line="22" column="17" lean-forward="true" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
+                <state relative-caret-position="357">
+                  <caret line="21" column="20" lean-forward="true" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
                   <folding>
-                    <element signature="e#0#18#0" expanded="true" />
-                    <marker date="1542417753735" expanded="true" signature="90:337" ph="..." />
+                    <element signature="e#0#15#0" expanded="true" />
+                    <marker date="1542420259973" expanded="true" signature="88:89" ph="..." />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/information.json">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="51">
+                  <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
                 </state>
               </provider>
             </entry>
@@ -216,10 +215,10 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/Login.py" />
         <option value="$PROJECT_DIR$/Lesson.py" />
-        <option value="$PROJECT_DIR$/PublicCourseSpider.py" />
-        <option value="$PROJECT_DIR$/main.py" />
-        <option value="$PROJECT_DIR$/information.json" />
         <option value="$PROJECT_DIR$/PlannedCourseSpider.py" />
+        <option value="$PROJECT_DIR$/main.py" />
+        <option value="$PROJECT_DIR$/PublicCourseSpider.py" />
+        <option value="$PROJECT_DIR$/information.json" />
       </list>
     </option>
   </component>
@@ -435,12 +434,12 @@
     <frame x="1920" y="25" width="2560" height="1055" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.11296738" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.11376293" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3297062" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32861805" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.35255712" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -505,13 +504,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PublicCourseSpider.py">
+    <entry file="file://$PROJECT_DIR$/Login.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1717">
-          <caret line="131" lean-forward="true" selection-start-line="131" selection-end-line="131" />
+        <state relative-caret-position="952">
+          <caret line="60" column="21" selection-start-line="60" selection-start-column="21" selection-end-line="60" selection-end-column="21" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
-            <marker date="1542415460265" expanded="true" signature="1062:1065" ph="..." />
+            <marker date="1542371408770" expanded="true" signature="101:392" ph="..." />
           </folding>
         </state>
       </provider>
@@ -523,47 +522,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Login.py">
+    <entry file="file://$PROJECT_DIR$/PlannedCourseSpider.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="60" column="21" lean-forward="true" selection-start-line="60" selection-start-column="21" selection-end-line="60" selection-end-column="21" />
+        <state relative-caret-position="254">
+          <caret line="98" column="31" lean-forward="true" selection-start-line="98" selection-start-column="31" selection-end-line="98" selection-end-column="31" />
+          <folding>
+            <element signature="e#1#19#0" expanded="true" />
+            <marker date="1542419984016" expanded="true" signature="1567:1869" ph="..." />
+            <marker date="1542419984016" expanded="true" signature="1955:2196" ph="..." />
+            <marker date="1542419984016" expanded="true" signature="2903:2904" ph="..." />
+            <marker date="1542419984016" expanded="true" signature="3219:3609" ph="..." />
+            <marker date="1542419984016" expanded="true" signature="3781:3786" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PublicCourseSpider.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="713">
+          <caret line="122" lean-forward="true" selection-start-line="122" selection-end-line="122" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
-            <marker date="1542371408770" expanded="true" signature="101:392" ph="..." />
+            <marker date="1542421857694" expanded="true" signature="1062:1065" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="20" lean-forward="true" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+            <marker date="1542420259973" expanded="true" signature="88:89" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/information.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="1" lean-forward="true" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="22" column="17" lean-forward="true" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-            <marker date="1542417753735" expanded="true" signature="90:337" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PlannedCourseSpider.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="118" lean-forward="true" selection-start-line="118" selection-end-line="118" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-            <marker date="1542417842042" expanded="true" signature="1567:1869" ph="..." />
-            <marker date="1542417842042" expanded="true" signature="1955:2196" ph="..." />
-            <marker date="1542417842042" expanded="true" signature="2903:2904" ph="..." />
-            <marker date="1542417842042" expanded="true" signature="3219:3609" ph="..." />
-            <marker date="1542417842042" expanded="true" signature="3781:3786" ph="..." />
-          </folding>
+        <state relative-caret-position="51">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
         </state>
       </provider>
     </entry>
