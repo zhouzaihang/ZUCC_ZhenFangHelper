@@ -10,4 +10,6 @@
 
 * [Python实现OCR识别验证码](https://www.zhzh.xyz/2018/11/15/ocrzfcode-py/)
 
-* [公选课信息抓包及自动抢课](https://www.zhzh.xyz/2018/11/15/zf-publiccoursespider/)
+* [公选课信息抓包及自动选课](https://www.zhzh.xyz/2018/11/15/zf-publiccoursespider/)
+
+* [计划内课程信息抓包及自动选课](https://www.zhzh.xyz/2018/11/17/zf-plannedcourse-spider/)

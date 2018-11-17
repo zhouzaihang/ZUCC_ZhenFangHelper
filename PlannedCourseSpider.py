@@ -27,7 +27,6 @@ def get_all_lesson(selector):
 def get_all_information_of_lesson(selector, lesson):
     lesson_list = []
     lessons_tag_list = selector.xpath('//table[@id="xjs_table"]/tr[1]/following-sibling::tr')
-    # print(lessons_tag_list)
     for lesson_tag in lessons_tag_list:
         # num = lesson_tag.xpath('td[1]/text()')[0]
         teacher = lesson_tag.xpath('td[2]/a/text()')[0]
@@ -36,7 +35,6 @@ def get_all_information_of_lesson(selector, lesson):
         code = lesson_tag.xpath('td[16]/input/@value')[0]
         lesson = Lesson.Lesson(code, lesson.name, lesson.code, teacher, time, str(surplus))
         lesson_list.append(lesson)
-        # lesson.show()
     return lesson_list
 
 
@@ -74,7 +72,7 @@ class PlannedCourseSpider:
 
         self.login.headers['Referer'] = response.url
         selector = etree.HTML(response.text)
-        self.set_view_state(selector, 'xsxk_form')
+        # self.set_view_state(selector, 'xsxk_form')
 
         return selector
 

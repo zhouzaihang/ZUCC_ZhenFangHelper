@@ -3,9 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="325842ae-b266-47c9-a543-01fbfa15f29a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Login.py" beforeDir="false" afterPath="$PROJECT_DIR$/Login.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlannedCourseSpider.py" beforeDir="false" afterPath="$PROJECT_DIR$/PlannedCourseSpider.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code.gif" beforeDir="false" afterPath="$PROJECT_DIR$/code.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/information.json" beforeDir="false" afterPath="$PROJECT_DIR$/information.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,7 +20,7 @@
     <SUITE FILE_PATH="coverage/ZUCC_ZhenFangHelper$OCR_Code.coverage" NAME="OCR_Code Coverage Results" MODIFIED="1542246613245" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ZUCC_ZhenFangHelper$PlannedCourseSpider.coverage" NAME="PlannedCourseSpider Coverage Results" MODIFIED="1542414745692" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ZUCC_ZhenFangHelper$train.coverage" NAME="train Coverage Results" MODIFIED="1542073988561" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/ZUCC_ZhenFangHelper$main.coverage" NAME="main Coverage Results" MODIFIED="1542422192068" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ZUCC_ZhenFangHelper$main.coverage" NAME="main Coverage Results" MODIFIED="1542426718817" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ZUCC_ZhenFangHelper$LessonSpider.coverage" NAME="LessonSpider Coverage Results" MODIFIED="1542157890334" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ZUCC_ZhenFangHelper$Login.coverage" NAME="Login Coverage Results" MODIFIED="1542197775581" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
@@ -27,7 +28,7 @@
     <session id="1622690670">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="13" />
+          <entry key="project.closed" value="14" />
           <entry key="project.open.time.0" value="2" />
           <entry key="project.open.time.4" value="2" />
           <entry key="project.open.time.5" value="9" />
@@ -39,9 +40,9 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="gif" value="1" />
-          <entry key="json" value="5" />
+          <entry key="json" value="7" />
           <entry key="md" value="4" />
-          <entry key="py" value="32" />
+          <entry key="py" value="33" />
           <entry key="sh" value="1" />
         </counts>
       </usages-collector>
@@ -49,126 +50,79 @@
         <counts>
           <entry key="Bash" value="1" />
           <entry key="Image" value="1" />
-          <entry key="JSON" value="5" />
+          <entry key="JSON" value="7" />
           <entry key="Markdown" value="4" />
-          <entry key="Python" value="32" />
+          <entry key="Python" value="33" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="19" />
-          <entry key="json" value="170" />
-          <entry key="md" value="168" />
-          <entry key="py" value="10195" />
+          <entry key="json" value="196" />
+          <entry key="md" value="201" />
+          <entry key="py" value="10200" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JSON" value="170" />
-          <entry key="Markdown" value="168" />
+          <entry key="JSON" value="196" />
+          <entry key="Markdown" value="201" />
           <entry key="PLAIN_TEXT" value="19" />
-          <entry key="Python" value="10195" />
+          <entry key="Python" value="10200" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/README.md">
-              <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-                <state split_layout="SPLIT">
-                  <first_editor relative-caret-position="204">
-                    <caret line="12" column="71" selection-start-line="12" selection-start-column="71" selection-end-line="12" selection-end-column="71" />
-                  </first_editor>
-                  <second_editor />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/PlannedCourseSpider.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="254">
-                  <caret line="98" column="31" lean-forward="true" selection-start-line="98" selection-start-column="31" selection-end-line="98" selection-end-column="31" />
-                  <folding>
-                    <element signature="e#1#19#0" expanded="true" />
-                    <marker date="1542419984016" expanded="true" signature="1567:1869" ph="..." />
-                    <marker date="1542419984016" expanded="true" signature="1955:2196" ph="..." />
-                    <marker date="1542419984016" expanded="true" signature="2903:2904" ph="..." />
-                    <marker date="1542419984016" expanded="true" signature="3219:3609" ph="..." />
-                    <marker date="1542419984016" expanded="true" signature="3781:3786" ph="..." />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Login.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="952">
-                  <caret line="60" column="21" selection-start-line="60" selection-start-column="21" selection-end-line="60" selection-end-column="21" />
-                  <folding>
-                    <element signature="e#0#11#0" expanded="true" />
-                    <marker date="1542371408770" expanded="true" signature="101:392" ph="..." />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/PublicCourseSpider.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="713">
-                  <caret line="122" lean-forward="true" selection-start-line="122" selection-end-line="122" />
-                  <folding>
-                    <element signature="e#0#11#0" expanded="true" />
-                    <marker date="1542421857694" expanded="true" signature="1062:1065" ph="..." />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Lesson.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="323">
-                  <caret line="19" column="30" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/main.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="357">
-                  <caret line="21" column="20" lean-forward="true" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
-                  <folding>
-                    <element signature="e#0#15#0" expanded="true" />
-                    <marker date="1542420259973" expanded="true" signature="88:89" ph="..." />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/information.json">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="51">
-                  <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="238">
+                <caret line="14" column="23" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/PlannedCourseSpider.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="249">
+              <caret line="78" column="33" lean-forward="true" selection-start-line="78" selection-start-column="33" selection-end-line="78" selection-end-column="33" />
+              <folding>
+                <element signature="e#1#19#0" expanded="true" />
+                <marker date="1542427019211" expanded="true" signature="1513:1815" ph="..." />
+                <marker date="1542427019211" expanded="true" signature="1901:2142" ph="..." />
+                <marker date="1542427019211" expanded="true" signature="2851:2852" ph="..." />
+                <marker date="1542427019211" expanded="true" signature="3167:3557" ph="..." />
+                <marker date="1542427019211" expanded="true" signature="3729:3734" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/information.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="1" lean-forward="true" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Lesson.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="25" lean-forward="true" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -212,13 +166,13 @@
         <option value="$PROJECT_DIR$/login.py" />
         <option value="$PROJECT_DIR$/LessonSpider.py" />
         <option value="$PROJECT_DIR$/OCR_Code.py" />
-        <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/Login.py" />
         <option value="$PROJECT_DIR$/Lesson.py" />
-        <option value="$PROJECT_DIR$/PlannedCourseSpider.py" />
         <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/PublicCourseSpider.py" />
+        <option value="$PROJECT_DIR$/Login.py" />
+        <option value="$PROJECT_DIR$/PlannedCourseSpider.py" />
         <option value="$PROJECT_DIR$/information.json" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -228,8 +182,8 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="3200" />
+  <component name="ProjectFrameBounds" extendedState="4">
+    <option name="x" value="1920" />
     <option name="y" value="25" />
     <option name="width" value="1280" />
     <option name="height" value="1055" />
@@ -431,15 +385,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1920" y="25" width="2560" height="1055" extended-state="6" />
+    <frame x="1920" y="25" width="1280" height="1055" extended-state="4" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.11376293" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.23176661" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3297062" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.35255712" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.35255712" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -494,52 +448,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="204">
-            <caret line="12" column="71" selection-start-line="12" selection-start-column="71" selection-end-line="12" selection-end-column="71" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/.vscode/launch.json">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Login.py">
+    <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="952">
-          <caret line="60" column="21" selection-start-line="60" selection-start-column="21" selection-end-line="60" selection-end-column="21" />
+        <state relative-caret-position="237">
+          <caret line="19" column="28" lean-forward="true" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
           <folding>
-            <element signature="e#0#11#0" expanded="true" />
-            <marker date="1542371408770" expanded="true" signature="101:392" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Lesson.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="30" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PlannedCourseSpider.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="98" column="31" lean-forward="true" selection-start-line="98" selection-start-column="31" selection-end-line="98" selection-end-column="31" />
-          <folding>
-            <element signature="e#1#19#0" expanded="true" />
-            <marker date="1542419984016" expanded="true" signature="1567:1869" ph="..." />
-            <marker date="1542419984016" expanded="true" signature="1955:2196" ph="..." />
-            <marker date="1542419984016" expanded="true" signature="2903:2904" ph="..." />
-            <marker date="1542419984016" expanded="true" signature="3219:3609" ph="..." />
-            <marker date="1542419984016" expanded="true" signature="3781:3786" ph="..." />
+            <element signature="e#0#15#0" expanded="true" />
+            <marker date="1542420259973" expanded="true" signature="88:89" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/PublicCourseSpider.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="713">
+        <state relative-caret-position="2074">
           <caret line="122" lean-forward="true" selection-start-line="122" selection-end-line="122" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
@@ -548,21 +473,53 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
+    <entry file="file://$PROJECT_DIR$/Login.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="20" lean-forward="true" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
+        <state relative-caret-position="2176">
+          <caret line="128" lean-forward="true" selection-start-line="128" selection-end-line="128" />
           <folding>
-            <element signature="e#0#15#0" expanded="true" />
-            <marker date="1542420259973" expanded="true" signature="88:89" ph="..." />
+            <element signature="e#0#11#0" expanded="true" />
+            <marker date="1542422951001" expanded="true" signature="101:392" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lesson.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="25" lean-forward="true" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/information.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        <state relative-caret-position="68">
+          <caret line="4" column="1" lean-forward="true" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="238">
+            <caret line="14" column="23" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PlannedCourseSpider.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="78" column="33" lean-forward="true" selection-start-line="78" selection-start-column="33" selection-end-line="78" selection-end-column="33" />
+          <folding>
+            <element signature="e#1#19#0" expanded="true" />
+            <marker date="1542427019211" expanded="true" signature="1513:1815" ph="..." />
+            <marker date="1542427019211" expanded="true" signature="1901:2142" ph="..." />
+            <marker date="1542427019211" expanded="true" signature="2851:2852" ph="..." />
+            <marker date="1542427019211" expanded="true" signature="3167:3557" ph="..." />
+            <marker date="1542427019211" expanded="true" signature="3729:3734" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

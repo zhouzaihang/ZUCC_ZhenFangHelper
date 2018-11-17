@@ -45,13 +45,12 @@ def login_status(response):
 
 
 class LoginSpider:
-    def __init__(self, number, password):
-        self.number = number
-        self.password = password
+    def __init__(self, stu_number, stu_password):
+        self.number = stu_number
+        self.password = stu_password
         self.index_url = 'http://xk.zucc.edu.cn/default2.aspx'
         self.imgUrl = 'http://xk.zucc.edu.cn/CheckCode.aspx?'
         self.s = requests.session()
-        # self.cookie = ''
         self.headers = {
             'Referer': self.index_url,
             'Connection': 'keep - alive',
@@ -60,9 +59,9 @@ class LoginSpider:
         }
         self.data = {
             '__VIEWSTATE': '',
-            'txtUserName': number,
+            'txtUserName': stu_number,
             'Textbox1': '',
-            'TextBox2': password,
+            'TextBox2': stu_password,
             'txtSecretCode': '',
             'RadioButtonList1': '%D1%A7%C9%FA',
             'Button1': '',
@@ -113,7 +112,6 @@ class LoginSpider:
 
         print("Login By Manual")
         if login_status(response):
-            # 这里的Cookie只能获取到ASP.NET_SessionId，无法获取到AntiLeech，导致了Cookie登录失败，后期尝试selenium获取
             return True
         else:
             return False
@@ -135,4 +133,3 @@ if __name__ == "__main__":
 
     spider.login_ocr()
     # spider.login_manual()
-    # spider.login_cookie()
