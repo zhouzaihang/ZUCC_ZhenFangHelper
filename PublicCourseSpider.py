@@ -68,7 +68,7 @@ class PublicLessonSpider:
         self.login.headers['Referer'] = response.url
         selector = etree.HTML(response.text)
         self.set_view_state(selector)
-        self.count_lesson = already(selector)
+        return selector
 
     def set_view_state(self, selector):
         __VIEWSTATE = selector.xpath('//*[@id="xsyxxxk_form"]/input[3]/@value')[0]
@@ -79,7 +79,6 @@ class PublicLessonSpider:
         self.base_data['Button2'] = '确定'.encode('gb2312')
         response = self.login.s.post(self.login.headers['Referer'], data=self.base_data, headers=self.login.headers)
         selector = etree.HTML(response.text)
-        # print(response.text)
         self.set_view_state(selector)
         del self.base_data['Button2']
         del self.base_data['TextBox1']
@@ -100,7 +99,8 @@ class PublicLessonSpider:
         return len(lesson_list)
 
     def run(self):
-        self.hello_zf()
+        selector = self.hello_zf()
+        self.count_lesson = already(selector)
         print('请输入课程名字进行搜索(准确查找|直接回车显示所有公选课)')
         lesson_name = input()
         lesson_list = get_lessons(self.search_lessons(lesson_name))
@@ -128,7 +128,6 @@ class PublicLessonSpider:
                 break
             else:
                 print("\n抢课失败")
-                # time.sleep(0.01)
 
 
 if __name__ == "__main__":

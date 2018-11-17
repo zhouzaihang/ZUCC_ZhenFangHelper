@@ -58,10 +58,6 @@ class PlannedCourseSpider:
         self.login = Lg.LoginSpider(stu_number, stu_password)
         self.url = 'http://xk.zucc.edu.cn/'
         self.__VIEWSTATE = ''
-        self.data = {
-            'xh': self.number,
-            'xkkh': '',
-        }
 
     def hello_zf(self):
         while not self.login.login_ocr():
@@ -83,9 +79,12 @@ class PlannedCourseSpider:
         return selector
 
     def hello_lesson(self, xkkh):
-        self.data['xkkh'] = xkkh
+        data = {
+            'xh': self.number,
+            'xkkh': xkkh,
+        }
 
-        response = self.login.s.get(self.url + 'xsxjs.aspx', params=self.data, headers=self.login.headers)
+        response = self.login.s.get(self.url + 'xsxjs.aspx', params=data, headers=self.login.headers)
 
         self.login.headers['Referer'] = response.url
         selector = etree.HTML(response.text)
@@ -117,7 +116,6 @@ class PlannedCourseSpider:
         choose_id = show_and_select_lessons(information_list)
         while True:
             self.select_lesson(information_list[choose_id])
-            # time.sleep(0.1)
 
 
 if __name__ == "__main__":
