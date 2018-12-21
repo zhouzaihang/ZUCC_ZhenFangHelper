@@ -1,4 +1,6 @@
 import copy
+import time
+
 import Login as Lg
 from lxml import etree
 import Lesson
@@ -52,6 +54,7 @@ class PublicLessonSpider:
         }
         self.count_lesson = 0
 
+    @property
     def hello_zf(self):
         while not self.login.login_ocr():
             continue
@@ -67,6 +70,17 @@ class PublicLessonSpider:
 
         self.login.headers['Referer'] = response.url
         selector = etree.HTML(response.text)
+        time.sleep(4)
+        if "选课条例" in selector.xpath('//*[@id="Form1"]/div/div/div[1]/p/text()')[1]:
+            data = {
+                "__VIEWSTATE": selector.xpath('//*[@id="Form1"]/input/@value')[0],
+                "Button1": "%CE%D2%D2%D1%C8%CF%D5%E6%D4%C4%B6%C1%A3%AC%B2%A2%CD%AC%D2%E2%D2%D4%C9%CF%C4%DA%C8%DD",
+                "TextBox1": 0
+            }
+            response = self.login.s.post(self.login.headers['Referer'], data=data, headers=self.login.headers)
+            self.login.headers['Referer'] = response.url
+            selector = etree.HTML(response.text)
+        # print(response.text)
         self.set_view_state(selector)
         return selector
 
@@ -99,7 +113,7 @@ class PublicLessonSpider:
         return len(lesson_list)
 
     def run(self):
-        selector = self.hello_zf()
+        selector = self.hello_zf
         self.count_lesson = already(selector)
         print('请输入课程名字进行搜索(准确查找|直接回车显示所有公选课)')
         lesson_name = input()
