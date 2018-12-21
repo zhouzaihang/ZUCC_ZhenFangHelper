@@ -105,7 +105,8 @@ class PlannedCourseSpider:
         data = {
             '__EVENTTARGET': 'Button1',
             '__VIEWSTATE': self.__VIEWSTATE,
-            'xkkh': lesson.code
+            'xkkh': lesson.number,
+            'RadioButtonList1': '1'
         }
         response = self.login.s.post(self.login.headers['Referer'], data=data, headers=self.login.headers)
         selector = etree.HTML(response.text)

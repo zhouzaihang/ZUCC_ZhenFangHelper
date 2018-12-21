@@ -11,12 +11,13 @@ def get_lessons(selector):
     lessons_tag_list = selector.xpath('//table[@id="kcmcGrid"]/tr[1]/following-sibling::tr')
     for lessons_tag in lessons_tag_list:
         code = lessons_tag.xpath('td[1]/input/@name')[0]
-        num = lessons_tag.xpath('td[2]/a/@onclick')[0][52:81]
-        na = lessons_tag.xpath('td[2]/a/text()')[0]
-        teacher_name = lessons_tag.xpath('td[4]/a/text()')[0]
-        time = lessons_tag.xpath('td[5]/@title')[0]
-        surplus = lessons_tag.xpath('td[11]/text()')[0]
-        lesson = Lesson.Lesson(num, na, code, teacher_name, time, surplus)
+        # num = lessons_tag.xpath('td[2]/a/@onclick')[0][52:81]
+        class_name = lessons_tag.xpath('td[3]/a/text()')[0]
+        num = lessons_tag.xpath('td[4]/text()')[0]
+        teacher_name = lessons_tag.xpath('td[5]/a/text()')[0]
+        time = lessons_tag.xpath('td[6]/@title')[0]
+        surplus = lessons_tag.xpath('td[12]/text()')[0]
+        lesson = Lesson.Lesson(num, class_name, code, teacher_name, time, surplus)
         lesson_list.append(lesson)
     return lesson_list
 
