@@ -63,7 +63,7 @@ class PublicLessonSpider:
         data = {
             'xh': self.number,
             'xm': self.name.encode('gb2312'),
-            'gnmkdm': 'N121103',
+            'gnmkdm': 'N121102',
         }
 
         self.login.headers['Referer'] = self.url + 'xs_main.aspx?xh=' + self.login.number
