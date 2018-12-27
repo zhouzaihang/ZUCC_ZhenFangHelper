@@ -109,6 +109,7 @@ class PublicLessonSpider:
         response = self.login.s.post(self.login.headers['Referer'], data=data, headers=self.login.headers)
         selector = etree.HTML(response.text)
         Lesson.show_error(selector)
+        print(time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time())))
         self.set_view_state(selector)
         self.count_lesson = already(selector)
         return len(lesson_list)

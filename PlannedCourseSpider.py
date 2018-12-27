@@ -1,3 +1,5 @@
+import time
+
 import Login as Lg
 from lxml import etree
 import Lesson
@@ -119,7 +121,10 @@ class PlannedCourseSpider:
             'RadioButtonList1': '1'
         }
         response = self.login.s.post(self.login.headers['Referer'], data=data, headers=self.login.headers)
+        if response.status_code != 200:
+            print("抢课失败,错误代码:" + response.status_code)
         selector = etree.HTML(response.text)
+        print(time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time())))
         Lesson.show_error(selector)
         self.set_view_state(selector, 'xsxjs_form')
 
