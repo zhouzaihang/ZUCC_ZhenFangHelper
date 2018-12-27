@@ -42,9 +42,9 @@ def show_and_select_lessons(lesson_list):
     for i in range(len(lesson_list)):
         print(i, end=' ')
         lesson_list[i].show()
-    select_id = int(input("请输入想选的课的id，id为每门课程开头的数字,如果没有课程显示，代表没有获取到计划内课程: "))
+    select_id = int(input("\n请输入想选的课的id，id为每门课程开头的数字,如果没有课程显示，代表没有获取到计划内课程: "))
     while select_id < 0 or len(lesson_list) <= select_id:
-        select_id = int(input("错误的ID，请重新输入: "))
+        select_id = int(input("\n错误的ID，请重新输入:"))
     return select_id
 
 
@@ -64,7 +64,7 @@ class PlannedCourseSpider:
         data = {
             'xh': self.number,
             'xm': self.name.encode('gb2312'),
-            'gnmkdm': 'N121103',
+            'gnmkdm': 'N121101',
         }
 
         self.login.headers['Referer'] = self.url + 'xs_main.aspx?xh=' + self.login.number
@@ -83,7 +83,7 @@ class PlannedCourseSpider:
             response = self.login.s.post(self.login.headers['Referer'], data=data, headers=self.login.headers)
             self.login.headers['Referer'] = response.url
             selector = etree.HTML(response.text)
-            self.set_view_state(selector, "xsxk_form")
+        self.set_view_state(selector, "xsxk_form")
 
         return selector
 
@@ -99,6 +99,16 @@ class PlannedCourseSpider:
         selector = etree.HTML(response.text)
         self.set_view_state(selector, 'xsxjs_form')
 
+        return selector
+
+    def english_development(self, selector):
+        date = {
+            'zymc': selector.xpath('//*[@id="zymc"]/@value')[0],
+            '__VIEWSTATE': self.__VIEWSTATE,
+            'Button3': '%B4%F3%D1%A7%D3%A2%D3%EF%CD%D8%D5%B9%BF%CE'
+        }
+        response = self.login.s.post(self.login.headers['Referer'], data=date, headers=self.login.headers)
+        selector = etree.HTML(response.text)
         return selector
 
     def select_lesson(self, lesson):
@@ -119,6 +129,17 @@ class PlannedCourseSpider:
 
     def run(self):
         selector = self.hello_zf()
+
+        while True:
+            select_id = int(input("\n0:本专业选课\t1:大学英语拓展课\t(跨专业选课和体育课功能待开发)\n请根据ID选择功能: "))
+            if select_id == 0:
+                break
+            elif select_id == 1:
+                selector = self.english_development(selector)
+                break
+            else:
+                print("\n输入有误！请重新输入\t")
+
         lesson_list = get_all_lesson(selector)
         select_id = show_and_select_lessons(lesson_list)
         selector = self.hello_lesson(lesson_list[select_id].code)
