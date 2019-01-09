@@ -15,7 +15,11 @@ def get_lessons(selector):
         class_name = lessons_tag.xpath('td[3]/a/text()')[0]
         num = lessons_tag.xpath('td[4]/text()')[0]
         teacher_name = lessons_tag.xpath('td[5]/a/text()')[0]
-        time = lessons_tag.xpath('td[6]/@title')[0]
+        time = lessons_tag.xpath('td[6]/@title')
+        if time:
+            time = time[0]
+        else:
+            time = "空"
         surplus = lessons_tag.xpath('td[12]/text()')[0]
         lesson = Lesson.Lesson(num, class_name, code, teacher_name, time, surplus)
         lesson_list.append(lesson)
