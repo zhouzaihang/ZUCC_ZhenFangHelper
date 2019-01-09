@@ -1,6 +1,5 @@
 import copy
 import time
-
 import Login as Lg
 from lxml import etree
 import Lesson
@@ -15,13 +14,13 @@ def get_lessons(selector):
         class_name = lessons_tag.xpath('td[3]/a/text()')[0]
         num = lessons_tag.xpath('td[4]/text()')[0]
         teacher_name = lessons_tag.xpath('td[5]/a/text()')[0]
-        time = lessons_tag.xpath('td[6]/@title')
-        if time:
-            time = time[0]
+        lesson_time = lessons_tag.xpath('td[6]/@title')
+        if lesson_time:
+            lesson_time = lesson_time[0]
         else:
-            time = "空"
+            lesson_time = "空"
         surplus = lessons_tag.xpath('td[12]/text()')[0]
-        lesson = Lesson.Lesson(num, class_name, code, teacher_name, time, surplus)
+        lesson = Lesson.Lesson(num, class_name, code, teacher_name, lesson_time, surplus)
         lesson_list.append(lesson)
     return lesson_list
 
@@ -38,10 +37,9 @@ def already(selector):
 
 
 class PublicLessonSpider:
-    def __init__(self, stu_number, stu_password, stu_name):
+    def __init__(self, stu_number, stu_password):
         self.number = stu_number
         self.password = stu_password
-        self.name = stu_name
         self.login = Lg.LoginSpider(stu_number, stu_password)
         self.url = 'http://xk.zucc.edu.cn/'
         self.base_data = {
@@ -66,7 +64,7 @@ class PublicLessonSpider:
 
         data = {
             'xh': self.number,
-            'xm': self.name.encode('gb2312'),
+            'xm': self.login.name.encode('gb2312'),
             'gnmkdm': 'N121102',
         }
 
@@ -151,6 +149,6 @@ class PublicLessonSpider:
 
 
 if __name__ == "__main__":
-    number, password, name = Lg.get_information()
-    spider = PublicLessonSpider(number, password, name)
+    number, password = Lg.get_information()
+    spider = PublicLessonSpider(number, password)
     spider.run()

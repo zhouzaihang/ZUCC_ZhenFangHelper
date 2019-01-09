@@ -13,12 +13,12 @@ while True:
 
 while True:
     try:
-        number, password, name = Lg.get_information()
+        number, password = Lg.get_information()
         spider = ''
         if choose_id == 0:
-            spider = PublicCourseSpider.PublicLessonSpider(number, password, name)
+            spider = PublicCourseSpider.PublicLessonSpider(number, password)
         elif choose_id == 1:
-            spider = PlannedCourseSpider.PlannedCourseSpider(number, password, name)
+            spider = PlannedCourseSpider.PlannedCourseSpider(number, password)
         spider.run()
     except requests.exceptions.ConnectionError:
         print("Error: 网络好像有点问题")

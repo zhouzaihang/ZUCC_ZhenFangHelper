@@ -10,8 +10,8 @@ def get_information():
         information = json.load(f)
     student_number = information['student_number']
     student_password = information['password']
-    student_name = information['name']
-    return student_number, student_password, student_name
+    # student_name = information['name']
+    return student_number, student_password
 
 
 def get_view_state(response):
@@ -44,10 +44,18 @@ def login_status(response):
         return False
 
 
+def get_name(response):
+    selector = etree.HTML(response.text)
+    name = selector.xpath("//*[@id='xhxm']/text()")[0]
+    name = name[:-2]
+    return name
+
+
 class LoginSpider:
     def __init__(self, stu_number, stu_password):
         self.number = stu_number
         self.password = stu_password
+        self.name = ""
         self.index_url = 'http://xk.zucc.edu.cn/default2.aspx'
         self.imgUrl = 'http://xk.zucc.edu.cn/CheckCode.aspx?'
         self.s = requests.session()
@@ -122,13 +130,15 @@ class LoginSpider:
 
         print("Login By OCR")
         if login_status(response):
+            # 获取姓名
+            self.name = get_name(response)
             return True
         else:
             return False
 
 
 if __name__ == "__main__":
-    number, password, name = get_information()
+    number, password = get_information()
     spider = LoginSpider(number, password)
 
     spider.login_ocr()

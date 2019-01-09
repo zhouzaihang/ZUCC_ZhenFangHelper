@@ -32,10 +32,10 @@ def get_all_information_of_lesson(selector, lesson):
     for lesson_tag in lessons_tag_list:
         # num = lesson_tag.xpath('td[1]/text()')[0]
         teacher = lesson_tag.xpath('td[2]/a/text()')[0]
-        time = lesson_tag.xpath('td[6]/text()')[0]
+        lesson_time = lesson_tag.xpath('td[6]/text()')[0]
         surplus = int(lesson_tag.xpath('td[12]/text()')[0]) - int(lesson_tag.xpath('td[15]/text()')[0])
         code = lesson_tag.xpath('td[16]/input/@value')[0]
-        lesson = Lesson.Lesson(code, lesson.name, lesson.code, teacher, time, str(surplus))
+        lesson = Lesson.Lesson(code, lesson.name, lesson.code, teacher, lesson_time, str(surplus))
         lesson_list.append(lesson)
     return lesson_list
 
@@ -51,10 +51,9 @@ def show_and_select_lessons(lesson_list):
 
 
 class PlannedCourseSpider:
-    def __init__(self, stu_number, stu_password, stu_name):
+    def __init__(self, stu_number, stu_password):
         self.number = stu_number
         self.password = stu_password
-        self.name = stu_name
         self.login = Lg.LoginSpider(stu_number, stu_password)
         self.url = 'http://xk.zucc.edu.cn/'
         self.__VIEWSTATE = ''
@@ -65,7 +64,7 @@ class PlannedCourseSpider:
 
         data = {
             'xh': self.number,
-            'xm': self.name.encode('gb2312'),
+            'xm': self.login.name.encode('gb2312'),
             'gnmkdm': 'N121101',
         }
 
@@ -155,6 +154,6 @@ class PlannedCourseSpider:
 
 
 if __name__ == "__main__":
-    number, password, name = Lg.get_information()
-    spider = PlannedCourseSpider(number, password, name)
+    number, password = Lg.get_information()
+    spider = PlannedCourseSpider(number, password)
     spider.run()
