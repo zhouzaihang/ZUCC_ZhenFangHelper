@@ -27,7 +27,7 @@ def get_lessons(selector):
 
 def already(selector):
     selected_lessons_pre_tag = selector.xpath('//table[@id="DataGrid2"]/tr')
-    print('\n正方你好！已经选择的公选课为：')
+    print('\n你好！已经选择的公选课为：')
     count = 0
     for i in selected_lessons_pre_tag:
         course = i.xpath('td[1]/text()') + i.xpath('td[7]/text()') + i.xpath('td[8]/text()')
@@ -128,7 +128,8 @@ class PublicLessonSpider:
             for i in range(len(lesson_list)):
                 print(i, end='\t')
                 lesson_list[i].show()
-            print('请输入想选的课的id，id为每门课程开头的数字,如果没有课程显示，代表暂时没有公选课,输入其他任意字符表示完成')
+            print('\n请输入想选的课的ID ID为每门课程开头的数字(每次输入一个ID 可以多次输入)'
+                  ' 丨 选完课程后，回车开始自动抢课 丨 如果没有课程显示，代表没有获取公选课')
             select_id = input()
             if select_id.isdigit():
                 select_id = int(select_id)

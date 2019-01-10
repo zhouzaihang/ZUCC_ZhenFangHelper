@@ -6,13 +6,13 @@
 
 ## 使用步骤
 
-> git clone源码
+* git clone源码
 
-> 安装Python环境：Python3.5+
+* 安装Python环境：Python3.5+
 
-> 程序依赖：lxml matplotlib pillow requests (使用pip或者conda安装这些包)
+* 程序依赖：lxml matplotlib pillow requests (使用pip或者conda安装这些包)
 
-> 在information.json中修改为需要选课的学号和姓名
+* 在information.json中修改为需要选课的学号和姓名
 
 ## 实现原理
 
