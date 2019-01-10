@@ -1,8 +1,20 @@
 # ZUCC_ZhenFangHelper(正方教务系统助手)
 
-用以正方教务系统学生版的自动登录、信息抓取和自动抢课
+用以正方教务系统学生版的自动登录、信息抓取和自动抢课(在Ubuntu 18.04、Windows 10测试可正常使用，其他版本操作系统如果有问题，请反馈给我)
 
 > 程序仅供交流学习，请勿用作非法用途
+
+## 使用步骤
+
+> git clone源码
+
+> 安装Python环境：Python3.5+
+
+> 程序依赖：lxml matplotlib pillow requests (使用pip或者conda安装这些包)
+
+> 在information.json中修改为需要选课的学号和姓名
+
+## 实现原理
 
 * [自动登录](https://www.zhzh.xyz/2018/11/09/zhenfanglogin/)
 
