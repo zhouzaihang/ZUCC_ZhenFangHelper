@@ -1,5 +1,4 @@
 import time
-
 import Login as Lg
 from lxml import etree
 import Lesson
@@ -103,12 +102,12 @@ class PlannedCourseSpider:
         return selector
 
     def english_development(self, selector):
-        date = {
+        data = {
             'zymc': selector.xpath('//*[@id="zymc"]/@value')[0],
             '__VIEWSTATE': self.__VIEWSTATE,
             'Button3': '%B4%F3%D1%A7%D3%A2%D3%EF%CD%D8%D5%B9%BF%CE'
         }
-        response = self.login.s.post(self.login.headers['Referer'], data=date, headers=self.login.headers)
+        response = self.login.s.post(self.login.headers['Referer'], data=data, headers=self.login.headers)
         selector = etree.HTML(response.text)
         return selector
 
