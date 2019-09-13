@@ -11,15 +11,15 @@ def get_lessons(selector):
     for lessons_tag in lessons_tag_list:
         code = lessons_tag.xpath('td[1]/input/@name')[0]
         # num = lessons_tag.xpath('td[2]/a/@onclick')[0][52:81]
-        class_name = lessons_tag.xpath('td[3]/a/text()')[0]
-        num = lessons_tag.xpath('td[4]/text()')[0]
-        teacher_name = lessons_tag.xpath('td[5]/a/text()')[0]
-        lesson_time = lessons_tag.xpath('td[6]/@title')
+        class_name = lessons_tag.xpath('td[2]/a/text()')[0]
+        num = lessons_tag.xpath('td[3]/text()')[0]
+        teacher_name = lessons_tag.xpath('td[4]/a/text()')[0]
+        lesson_time = lessons_tag.xpath('td[5]/@title')
         if lesson_time:
             lesson_time = lesson_time[0]
         else:
             lesson_time = "空"
-        surplus = lessons_tag.xpath('td[12]/text()')[0]
+        surplus = lessons_tag.xpath('td[11]/text()')[0]
         lesson = Lesson.Lesson(num, class_name, code, teacher_name, lesson_time, surplus)
         lesson_list.append(lesson)
     return lesson_list
@@ -64,7 +64,7 @@ class PublicLessonSpider:
 
         data = {
             'xh': self.number,
-            'xm': self.login.name.encode('gb2312'),
+            'xm': self.login.name.encode('utf-8'),
             'gnmkdm': 'N121102',
         }
 
@@ -76,8 +76,8 @@ class PublicLessonSpider:
         time.sleep(4)
         if "选课条例" in selector.xpath('//*[@id="Form1"]/div/div/div[1]/p/text()')[1]:
             data = {
-                "__VIEWSTATE": selector.xpath('//*[@id="Form1"]/input/@value')[0],
-                "Button1": "%CE%D2%D2%D1%C8%CF%D5%E6%D4%C4%B6%C1%A3%AC%B2%A2%CD%AC%D2%E2%D2%D4%C9%CF%C4%DA%C8%DD",
+                "__VIEWSTATE": selector.xpath('//*[@id="Form1"]/div/input[@id="__VIEWSTATE"]/@value')[0],
+                "Button1": "我已认真阅读，并同意以上内容".encode("utf-8"),
                 "TextBox1": 0
             }
             response = self.login.s.post(self.login.headers['Referer'], data=data, headers=self.login.headers)
@@ -88,12 +88,12 @@ class PublicLessonSpider:
         return selector
 
     def set_view_state(self, selector):
-        __VIEWSTATE = selector.xpath('//*[@id="xsyxxxk_form"]/input[3]/@value')[0]
+        __VIEWSTATE = selector.xpath('//*[@id="xsyxxxk_form"]/div/input[@id="__VIEWSTATE"]/@value')[0]
         self.base_data['__VIEWSTATE'] = __VIEWSTATE
 
     def search_lessons(self, lesson_name=""):
-        self.base_data['TextBox1'] = lesson_name.encode('gb2312')
-        self.base_data['Button2'] = '确定'.encode('gb2312')
+        self.base_data['TextBox1'] = lesson_name.encode('utf-8')
+        self.base_data['Button2'] = '确定'.encode('utf-8')
         response = self.login.s.post(self.login.headers['Referer'], data=self.base_data, headers=self.login.headers)
         selector = etree.HTML(response.text)
         self.set_view_state(selector)
@@ -103,7 +103,7 @@ class PublicLessonSpider:
 
     def select_lesson(self, lesson_list):
         data = copy.deepcopy(self.base_data)
-        data['Button1'] = '  提交  '.encode('gb2312')
+        data['Button1'] = '  提交  '.encode('utf-8')
         print("\n正在抢课：")
         for lesson in lesson_list:
             data[lesson.code] = 'on'

@@ -19,7 +19,7 @@ def stay_blue2gray(image):
     for y in range(width):
         for x in range(height):
             pix_data = image.getpixel((x, y))
-            if pix_data[0] == 0 and pix_data[1] == 0 and pix_data[2] == 153:
+            if pix_data[0] <= 40 and pix_data[1] <= 40 and pix_data[2] >= 65:
                 image.putpixel((x, y), (0, 0, 0))
                 continue
             else:
@@ -35,7 +35,7 @@ def split_image(image):
     w = 12
     h = 23
     for i in range(4):
-        images.append(image.crop((x, y, x+w, y+h)))
+        images.append(image.crop((x, y, x + w, y + h)))
         x += w
         # images[i].save(str(i) + '.gif')
     return images
@@ -102,4 +102,4 @@ def run(image_path='./'):
 
 
 if __name__ == "__main__":
-    run()
+    print(run())

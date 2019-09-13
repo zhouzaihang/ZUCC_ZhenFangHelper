@@ -30,7 +30,7 @@ class GradeSpider:
         self.semester = []
         self.params = {
             'xh': self.number,
-            'xm': self.login.name.encode('gb2312'),
+            'xm': self.login.name.encode('utf-8'),
             'gnmkdm': 'N121617',
         }
         self.data = {
@@ -53,7 +53,7 @@ class GradeSpider:
             course_name = tr.xpath('td[4]/text()')[0]
             credit = tr.xpath('td[7]/text()')[0]
             grade_point = tr.xpath('td[8]/text()')[0][3:]
-            grade = tr.xpath('td[9]/text()')[0]
+            grade = tr.xpath('td[8]/text()')[0]
             courses.append(Course(academic_year, semester, course_code, course_name, credit, grade_point, grade))
         return courses
 
@@ -104,12 +104,12 @@ class GradeSpider:
         response = self.login.s.get(self.url + 'xscj_gc2.aspx', params=self.params, headers=self.login.headers)
         self.login.headers['Referer'] = response.url
         selector = etree.HTML(response.text)
-        self.data['__VIEWSTATE'] = selector.xpath('//*[@id="Form1"]/input/@value')[0]
+        self.data['__VIEWSTATE'] = selector.xpath('//*[@id="Form1"]/div/input[@id="__VIEWSTATE"]/@value')[0]
         self.years = self.get_select(selector.xpath('//*[@id="ddlXN"]/option[1]/following-sibling::option'))
         self.semester = self.get_select(selector.xpath('//*[@id="ddlXQ"]/option[1]/following-sibling::option'))[:-1]
 
     def query_all_grade(self, button, ddl_xn='', ddl_xq=''):
-        self.data['Button2'] = button.encode('gb2312')
+        self.data['Button2'] = button.encode('utf-8')
         self.data['ddlXN'] = ddl_xn
         self.data['ddlXQ'] = ddl_xq
         response = self.login.s.post(self.url + 'xscj_gc2.aspx', params=self.params,

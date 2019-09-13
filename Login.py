@@ -17,7 +17,8 @@ def get_information():
 def get_view_state(response):
     # 用Lxml库解析网页，通过Xpath语法定位__VIEWSTATE
     selector = etree.HTML(response.content)
-    __VIEWSTATE = selector.xpath('//*[@id="form1"]/input/@value')[0]
+    # __VIEWSTATE = selector.xpath('//*[@id="form1"]/input/@value')[0]
+    __VIEWSTATE = selector.xpath('//*[@id="form1"]/div/input[@id="__VIEWSTATE"]/@value')[0]
 
     return __VIEWSTATE
 
@@ -30,13 +31,16 @@ def input_code(img_dir):
 
 def login_status(response):
     if response.status_code == requests.codes.ok:
-        selector = etree.HTML(response.content)
+        selector = etree.HTML(response.content.decode('utf-8'))
         state = selector.xpath('/html/head/title/text()')[0]
         if state == "正方教务管理系统":
             print("登录成功")
             return True
         elif state == "欢迎使用正方教务管理系统！请登录":
             print("登录失败")
+            return False
+        else:
+            print("登录失败!未知错误,请通过联系脚本作者")
             return False
     else:
         print(response.status_code)
@@ -66,16 +70,14 @@ class LoginSpider:
                           'Chrome/70.0.3538.77 Safari/537.36 '
         }
         self.data = {
+            '__LASTFOCUS': '',
             '__VIEWSTATE': '',
+            '__VIEWSTATEGENERATOR': '',
             'txtUserName': stu_number,
-            'Textbox1': '',
             'TextBox2': stu_password,
             'txtSecretCode': '',
-            'RadioButtonList1': '%D1%A7%C9%FA',
-            'Button1': '',
-            'lbLanguage': '',
-            'hidPdrs': '',
-            'hidsc': ''
+            'RadioButtonList1': '%E5%AD%A6%E7%94%9F',
+            'Button1': '%E7%99%BB%E5%BD%95',
         }
 
     # def login_cookie(self):
@@ -95,7 +97,9 @@ class LoginSpider:
         img_dir = self.down_code()
 
         # POST数据发送
-        self.data['__VIEWSTATE'] = get_view_state(response)
+        selector = etree.HTML(response.content)
+        self.data['__VIEWSTATE'] = selector.xpath('//*[@id="form1"]/div/input[@id="__VIEWSTATE"]/@value')[0]
+        self.data['__VIEWSTATEGENERATOR'] = selector.xpath('//input[@id="__VIEWSTATEGENERATOR"]/@value')[0]
 
         return img_dir
 

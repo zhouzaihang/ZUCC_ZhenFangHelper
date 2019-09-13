@@ -30,10 +30,10 @@ def get_all_information_of_lesson(selector, lesson):
     lessons_tag_list = selector.xpath('//table[@id="xjs_table"]/tr[1]/following-sibling::tr')
     for lesson_tag in lessons_tag_list:
         # num = lesson_tag.xpath('td[1]/text()')[0]
-        teacher = lesson_tag.xpath('td[2]/a/text()')[0]
-        lesson_time = lesson_tag.xpath('td[6]/text()')[0]
-        surplus = int(lesson_tag.xpath('td[12]/text()')[0]) - int(lesson_tag.xpath('td[15]/text()')[0])
-        code = lesson_tag.xpath('td[16]/input/@value')[0]
+        teacher = lesson_tag.xpath('td[3]/a/text()')[0]
+        lesson_time = lesson_tag.xpath('td[4]/text()')[0]
+        surplus = int(lesson_tag.xpath('td[12]/text()')[0]) - int(lesson_tag.xpath('td[14]/text()')[0])
+        code = lesson_tag.xpath('td[1]/input/@value')[0]
         lesson = Lesson.Lesson(code, lesson.name, lesson.code, teacher, lesson_time, str(surplus))
         lesson_list.append(lesson)
     return lesson_list
@@ -63,7 +63,7 @@ class PlannedCourseSpider:
 
         data = {
             'xh': self.number,
-            'xm': self.login.name.encode('gb2312'),
+            'xm': self.login.name.encode('utf-8'),
             'gnmkdm': 'N121101',
         }
 
@@ -73,8 +73,7 @@ class PlannedCourseSpider:
         self.login.headers['Referer'] = response.url
         selector = etree.HTML(response.text)
         if "选课条例" in selector.xpath('//*[@id="Form1"]/div/div/div[1]/p/text()')[1]:
-
-            self.__VIEWSTATE = selector.xpath('//*[@id="Form1"]/input[1]/@value')[0]
+            self.__VIEWSTATE = selector.xpath('//*[@id="Form1"]/div/input[@id="__VIEWSTATE"]/@value')[0]
             data = {
                 "__VIEWSTATE": self.__VIEWSTATE,
                 "Button1": "%CE%D2%D2%D1%C8%CF%D5%E6%D4%C4%B6%C1%A3%AC%B2%A2%CD%AC%D2%E2%D2%D4%C9%CF%C4%DA%C8%DD",
@@ -93,8 +92,8 @@ class PlannedCourseSpider:
             'xkkh': xkkh,
         }
 
-        response = self.login.s.get(self.url + 'xsxjs.aspx', params=data, headers=self.login.headers)
-
+        response = self.login.s.get(self.url + 'clsPage/' + 'xsxjs.aspx', params=data, headers=self.login.headers)
+        print(response.text)
         self.login.headers['Referer'] = response.url
         selector = etree.HTML(response.text)
         self.set_view_state(selector, 'xsxjs_form')
@@ -127,7 +126,7 @@ class PlannedCourseSpider:
         self.set_view_state(selector, 'xsxjs_form')
 
     def set_view_state(self, selector, from_name):
-        self.__VIEWSTATE = selector.xpath('//*[@id="' + from_name + '"]/input[3]/@value')[0]
+        self.__VIEWSTATE = selector.xpath('//*[@id="__VIEWSTATE"]/@value')[0]
         return self.__VIEWSTATE
 
     def run(self):
