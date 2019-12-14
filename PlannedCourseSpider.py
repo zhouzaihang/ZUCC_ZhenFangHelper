@@ -72,16 +72,19 @@ class PlannedCourseSpider:
 
         self.login.headers['Referer'] = response.url
         selector = etree.HTML(response.text)
-        if "选课条例" in selector.xpath('//*[@id="Form1"]/div/div/div[1]/p/text()')[1]:
-            self.__VIEWSTATE = selector.xpath('//*[@id="Form1"]/div/input[@id="__VIEWSTATE"]/@value')[0]
-            data = {
-                "__VIEWSTATE": self.__VIEWSTATE,
-                "Button1": "%CE%D2%D2%D1%C8%CF%D5%E6%D4%C4%B6%C1%A3%AC%B2%A2%CD%AC%D2%E2%D2%D4%C9%CF%C4%DA%C8%DD",
-                "TextBox1": 0
-            }
-            response = self.login.s.post(self.login.headers['Referer'], data=data, headers=self.login.headers)
-            self.login.headers['Referer'] = response.url
-            selector = etree.HTML(response.text)
+        try:
+            if "选课条例" in selector.xpath('//*[@id="Form1"]/div/div/div[1]/p/text()')[1]:
+                self.__VIEWSTATE = selector.xpath('//*[@id="Form1"]/div/input[@id="__VIEWSTATE"]/@value')[0]
+                data = {
+                    "__VIEWSTATE": self.__VIEWSTATE,
+                    "Button1": "%CE%D2%D2%D1%C8%CF%D5%E6%D4%C4%B6%C1%A3%AC%B2%A2%CD%AC%D2%E2%D2%D4%C9%CF%C4%DA%C8%DD",
+                    "TextBox1": 0
+                }
+                response = self.login.s.post(self.login.headers['Referer'], data=data, headers=self.login.headers)
+                self.login.headers['Referer'] = response.url
+                selector = etree.HTML(response.text)
+        except IndexError:
+            print("无需确认选课条例")
         self.set_view_state(selector, "xsxk_form")
 
         return selector
@@ -93,7 +96,6 @@ class PlannedCourseSpider:
         }
 
         response = self.login.s.get(self.url + 'clsPage/' + 'xsxjs.aspx', params=data, headers=self.login.headers)
-        print(response.text)
         self.login.headers['Referer'] = response.url
         selector = etree.HTML(response.text)
         self.set_view_state(selector, 'xsxjs_form')

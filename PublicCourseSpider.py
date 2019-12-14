@@ -11,10 +11,10 @@ def get_lessons(selector):
     for lessons_tag in lessons_tag_list:
         code = lessons_tag.xpath('td[1]/input/@name')[0]
         # num = lessons_tag.xpath('td[2]/a/@onclick')[0][52:81]
-        class_name = lessons_tag.xpath('td[2]/a/text()')[0]
-        num = lessons_tag.xpath('td[3]/text()')[0]
-        teacher_name = lessons_tag.xpath('td[4]/a/text()')[0]
-        lesson_time = lessons_tag.xpath('td[5]/@title')
+        class_name = lessons_tag.xpath('td[3]/a/text()')[0]
+        num = lessons_tag.xpath('td[4]/text()')[0]
+        teacher_name = lessons_tag.xpath('td[5]/a/text()')[0]
+        lesson_time = lessons_tag.xpath('td[6]/@title')
         if lesson_time:
             lesson_time = lesson_time[0]
         else:
@@ -74,15 +74,18 @@ class PublicLessonSpider:
         self.login.headers['Referer'] = response.url
         selector = etree.HTML(response.text)
         time.sleep(4)
-        if "选课条例" in selector.xpath('//*[@id="Form1"]/div/div/div[1]/p/text()')[1]:
-            data = {
-                "__VIEWSTATE": selector.xpath('//*[@id="Form1"]/div/input[@id="__VIEWSTATE"]/@value')[0],
-                "Button1": "我已认真阅读，并同意以上内容".encode("utf-8"),
-                "TextBox1": 0
-            }
-            response = self.login.s.post(self.login.headers['Referer'], data=data, headers=self.login.headers)
-            self.login.headers['Referer'] = response.url
-            selector = etree.HTML(response.text)
+        try:
+            if "选课条例" in selector.xpath('//*[@id="Form1"]/div/div/div[1]/p/text()')[1]:
+                data = {
+                    "__VIEWSTATE": selector.xpath('//*[@id="Form1"]/div/input[@id="__VIEWSTATE"]/@value')[0],
+                    "Button1": "我已认真阅读，并同意以上内容".encode("utf-8"),
+                    "TextBox1": 0
+                }
+                response = self.login.s.post(self.login.headers['Referer'], data=data, headers=self.login.headers)
+                self.login.headers['Referer'] = response.url
+                selector = etree.HTML(response.text)
+        except IndexError:
+            print("无需确认选课条例!")
         # print(response.text)
         self.set_view_state(selector)
         return selector
@@ -128,17 +131,20 @@ class PublicLessonSpider:
             for i in range(len(lesson_list)):
                 print(i, end='\t')
                 lesson_list[i].show()
-            print('\n请输入想选的课的ID ID为每门课程开头的数字(每次输入一个ID 可以多次输入)'
+            print('\n请输入想选的课的ID ID为每门课程开头的数字(每次输入一个ID)'
                   ' 丨 选完课程后，回车开始自动抢课 丨 如果没有课程显示，代表没有获取公选课')
             select_id = input()
             if select_id.isdigit():
                 select_id = int(select_id)
                 if 0 <= select_id < len(lesson_list):
                     select_list.append(lesson_list[select_id])
-                else:
                     break
+                else:
+                    print("请输入上面显示过的 ID")
+                    continue
             else:
-                break
+                print("请输入数字!!")
+                continue
 
         num = self.count_lesson
         while True:
