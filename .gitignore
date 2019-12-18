@@ -145,3 +145,5 @@ venv.bak/
 # mypy
 .mypy_cache/
 
+# we can force add if we really want to update this file
+information.json
