@@ -56,6 +56,8 @@ class PlannedCourseSpider:
         self.login = Lg.LoginSpider(stu_number, stu_password)
         self.url = 'http://xk.zucc.edu.cn/'
         self.__VIEWSTATE = ''
+        # book by default
+        self.__BOOK_MATERIAL = '1'
 
     def hello_zf(self):
         while not self.login.login_ocr():
@@ -117,7 +119,7 @@ class PlannedCourseSpider:
             '__EVENTTARGET': 'Button1',
             '__VIEWSTATE': self.__VIEWSTATE,
             'xkkh': lesson.number,
-            'RadioButtonList1': '1'
+            'RadioButtonList1': self.__BOOK_MATERIAL
         }
         response = self.login.s.post(self.login.headers['Referer'], data=data, headers=self.login.headers)
         if response.status_code != 200:
@@ -149,6 +151,7 @@ class PlannedCourseSpider:
         selector = self.hello_lesson(lesson_list[select_id].code)
         information_list = get_all_information_of_lesson(selector, lesson_list[select_id])
         choose_id = show_and_select_lessons(information_list)
+        self.__BOOK_MATERIAL = input("\n是否预定教材?\n0:否\t1:是")
         while True:
             self.select_lesson(information_list[choose_id])
 
