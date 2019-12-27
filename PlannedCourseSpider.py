@@ -153,7 +153,7 @@ class PlannedCourseSpider:
     response = self.login.s.post(
         self.login.headers['Referer'], data=data, headers=self.login.headers)
     if response.status_code != 200:
-      print("抢课失败,错误代码:" + response.status_code)
+      print("抢课失败,错误代码:" + str(response.status_code))
     selector = etree.HTML(response.text)
     print(time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time())))
     Lesson.show_error(selector)
