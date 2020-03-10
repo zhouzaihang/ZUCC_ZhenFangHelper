@@ -16,12 +16,12 @@
 
 ## 实现原理
 
-* [自动登录](https://zhzh.xyz/2018/11/09/python-crawler/zhenfanglogin/)
+* [自动登录](https://zhzh.xyz/2018/11/09/Crawler/zhenfanglogin/)
 
-* [OCR字模生成(Java)](https://zhzh.xyz/2018/11/15/python-crawler/codeocr-java/)
+* [OCR字模生成(Java)](https://zhzh.xyz/2018/11/15/Crawler/codeocr-java/)
 
-* [Python实现OCR识别验证码](https://zhzh.xyz/2018/11/15/python-crawler/ocrzfcode-py/)
+* [Python实现OCR识别验证码](https://zhzh.xyz/2018/11/15/Crawler/ocrzfcode-py/)
 
-* [公选课信息抓包及自动选课](https://zhzh.xyz/2018/11/15/python-crawler/zf-publiccoursespider/)
+* [公选课信息抓包及自动选课](https://zhzh.xyz/2018/11/15/Crawler/zf-publiccoursespider/)
 
-* [计划内课程信息抓包及自动选课](https://zhzh.xyz/2018/11/17/python-crawler/zf-plannedcourse-spider/)
+* [计划内课程信息抓包及自动选课](https://zhzh.xyz/2018/11/17/Crawler/zf-plannedcourse-spider/)
